@@ -73,9 +73,9 @@ With the minimum requirements complete, the output should resemble:
 
 ## Bonus
 
-Style the components to make the output look like a floor plan:
+Style the components to make the output look like this [solution](https://z3qii.csb.app/).
 
-[Solution](https://z3qii.csb.app/)
+
 
 <img src="https://i.imgur.com/NhRcNrk.png" width=500>
 
