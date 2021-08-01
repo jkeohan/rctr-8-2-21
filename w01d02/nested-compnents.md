@@ -48,6 +48,7 @@ In order to bridge the gap of what defines a Component, we will be creating a cu
 
 Open and fork the following [CodeSandbox Card Starter](https://codesandbox.io/s/components-bootstrap-starter-o2ry1?file=/src/App.js).
 
+:thumbsup: Click on the thumbs up when you've forked.
 
 <!-- https://codesandbox.io/s/seir-831-bootstrap-starter-sv30w?file=/src/index.js -->
 
@@ -56,7 +57,8 @@ You should see the following:
 <img src="https://i.imgur.com/NaGIt48.jpg" width=400/>
 
 - Take a moment to examine the code.  
-- See if you can determine where the `H1` is being rendered as well as the 2 cards
+- See if you can determine where the `H1` is being rendered
+- See if you can determine where the 2 cards are being rendered
 
 :thumbsup: Click on the thumbs up when you're done.
 
@@ -69,7 +71,7 @@ Our investigation should have determined the following:
 - `App` Component - renders the H1
 - `public/index.html` - renders the cards
 
-**Note:** You might have noticed that the App Component was written slightly differently then before.  It's being both created and exported at the same time and requires less code. 
+**Note:** You might have noticed that the App Component was written slightly differently then before.  It's being both created and exported at the same time. 
 
 ```js
 export default function App() {
@@ -172,20 +174,20 @@ Cut the entire `<div class='card>...</div>` for the first card and place it insi
 const Card1 = () => {
   return (
     <div class="card" style="width: 18rem;">
-    <img
-      src="https://images.unsplash.com/photo-1536514072410-5019a3c69182?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60"
-      class="card-img-top"
-      alt="..."
-    />
-    <div class="card-body">
-      <h5 class="card-title">Card 1</h5>
-      <p class="card-text">
-        Some quick example text to build on the card title and make up the
-        bulk of the card's content.
-      </p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+      <img
+        src="https://images.unsplash.com/photo-1536514072410-5019a3c69182?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60"
+        class="card-img-top"
+        alt="..."
+      />
+      <div class="card-body">
+       <h5 class="card-title">Card 1</h5>
+        <p class="card-text">
+         Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
     </div>
-  </div>
   )
 }
 
@@ -297,7 +299,7 @@ Or perhaps the image could be a reused as well as it's own independent element. 
 
 If we took just a moment to actually visualize these Components it might look something like this: 
 
-<img src="https://i.imgur.com/AykESnf.png" width=500/ >
+<img src="https://i.imgur.com/LaD44H7.pngv" width=500/ >
 
 So it seems there is an opportunity to create and reuse additional components.  
 
@@ -375,7 +377,8 @@ Now it's you're turn to do the following:
 
 - Create a CardImage Component that returns the just image
 - Create a Button Component that returns just the button
-- Import CardImage and Button into Card1
+- Import CardImage into Card1
+- Import the CardButton into CardBody
 - Replace the HTML with those Components
 
 :thumbsup: Click on the thumbs up when you're done.

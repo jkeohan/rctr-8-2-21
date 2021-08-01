@@ -50,7 +50,7 @@ Let's take this `Bootstrap Card` component for instance.  It's a common design t
 
 It's essentially comprised of the following html.  As a developer all you would need to do is copy/paste the html and update the relevant content placeholders.  
 
-It's essentially a grouping of elements that, as a Component, is reusable. 
+It's essentially a grouping of elements that, as a **Component**, is reusable. 
 
 ```html
 <div class="card" style="width: 18rem;">
@@ -72,11 +72,11 @@ Bootstrap essentially allows us to pick and choose from this reusable pool of Co
 
 ### React Components
 
-Although Bootstrap comes with predefined Components out of the box, React does no such thing.
+Although Bootstrap comes with predefined Components out of the box, React does not, by default, provide a list of Components.
 
-React allows you to decide what constitutes a Component and then provides the framework for you to add the required HTML and JS to create them. 
+React, on the other hand, allows you to decide what constitutes a Component and then provides the framework for you to add the required HTML and JS to create one.
 
-So instead of creating a few large files, you will organize you're web app into small, reusable Components that encompass their own content and business logic.
+So instead of creating a few large files, you will organize you're web app into small, reusable **Components** that encompass their own content and business logic.
 
 #### Train Station Schedule Example
 Take for instance an example of a train station schedule. There are elements that repeat themselves in the html structure and essentially perform the same function. 
@@ -126,7 +126,7 @@ Some of the requirements are specific to `JSX`, short for `JavaScript And XML`.
 - Each Component file should be in a separate folder 
 - Each Component should reference it's own CSS
 
-### Class vs Hook Components
+### Class vs Functional Components
 
 As of `React 16.8` Components now come in 3 forms, all of which follow the same requirements and best practices. 
 
@@ -221,11 +221,11 @@ There is much more to `Class Components` then was touched on here.  This was onl
 
 Just keep in mind that the additional structure for defining state, handling props, calling lifecycle methods is much different than their `Hook` based counterparts. 
 
-#### Functional Components
+### Functional Components
 
 Being that you are familiar with JS functions writing a Functional Component is much easier to understand. 
 
-For now let's just comment out the **Class Component** and we will write a new `Presentational Functional` Component.
+For now let's just comment out the **Class Component** and we will write a new `Functional` Component.
 
 
 ```js
@@ -234,7 +234,7 @@ const App = () => (
 )
 ```
 
-As we can see a `Functional` Component is more streamlined and concise. It's written using the `fat-arrow` syntax which allows it to take advantage of the `implicit` return.  
+As we can see a `Functional` Component is more streamlined and concise. If written using the `fat-arrow` syntax it allows it to take advantage of the `implicit` return.  
 
 If we only need to return `JSX` then this way of writing the Component will suffice.  However if we needed to include additional functionality then we would need to write the Component as follows:
 
