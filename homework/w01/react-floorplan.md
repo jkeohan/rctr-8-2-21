@@ -21,7 +21,7 @@ And that's what we'll practice in this assignment!
 
 ## Minimum Requirements
 
-1. Use `CodeSandbox` to generate a new React app, titled `react-floorplan` or something similar. 
+1. Use `CodeSandbox` to generate a new React app, titled `react-floorplan`.  
 
 1. Define the following components and code them such that they fulfill their responsibilities:
 
@@ -74,6 +74,8 @@ With the minimum requirements complete, the output should resemble:
 ## Bonus
 
 Style the components to make the output look like a floor plan:
+
+[Solution](https://z3qii.csb.app/)
 
 <img src="https://i.imgur.com/NhRcNrk.png" width=500>
 
