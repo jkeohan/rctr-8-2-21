@@ -2,7 +2,7 @@
 
 In this exercise, you will practice creating reusable React Components.
 
-Use the following [CodeSandbox Starter](https://codesandbox.io/s/adoring-goodall-mhive) code
+Use the following [CodeSandbox Starter](https://codesandbox.io/s/rctr-8-2-21-weathericons-starter-hdngl?file=/src/App.js) code
 
 In `src/index.html` you will find five weather elements that generate the output you are seeing now.
 
@@ -34,5 +34,4 @@ Perform the following to complete the lab:
 * Try working on the [The Knot](https://codesandbox.io/s/theknot-starter-ye150) exercise
 
 **Submitting Homework**
-* You will only submit the required HW
-* Add a link to your CodeSandbox [here](https://docs.google.com/spreadsheets/d/1eSarapMxitSh8sQtaKJ3sVB8BtsPjVVyrd155zANSyo/edit#gid=566709901)
+* Add a link to your CodeSandbox [here](https://docs.google.com/spreadsheets/d/1znSaQg63lTMiBTZCmFox-6ahVYti0gU_3LQ6V3vVpFo/edit#gid=566709901)
