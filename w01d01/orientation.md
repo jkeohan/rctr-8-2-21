@@ -216,7 +216,7 @@ Here are some previous student Final Projects:
  - [Dungeon and Dragons](http://dnd-monsters.surge.sh/)
  - [Bible Trip](https://raboriel.github.io/BibleTrip/)
  - [MasterMind](https://pd9ht.csb.app/)
- - [Mars Remake](https://cn8f5.csb.app/)
+ <!-- - [Mars Remake](https://ytgyi.csb.app/) -->
 
 
 
