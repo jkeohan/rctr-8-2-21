@@ -152,9 +152,9 @@ Please keep in mind that outside of class/office hours we are at our day jobs/wi
 
 <img src="https://i.imgur.com/Lf9vPOp.png" width="250" />
 
-* A [short survey](https://docs.google.com/forms/u/3/d/e/1FAIpQLSfdanZ3uCV2h14tpFx9FcM8BRFDkiABIHlSIZ5dqCYiODWx6Q/viewform?usp=send_form) to help us better understand your learning growth
+* A short survey to help us better understand your learning growth
 * Reviewed by the instructional team after every class
-* Will be distributed by Slackbot at 8:55pm every class
+* Posted in Slack at end of class 
 
 ---
 
