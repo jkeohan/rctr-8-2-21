@@ -168,7 +168,7 @@ React can co-exist with other Javascript libraries and frameworks.  If fact ther
 ### React in MVC
 
 React is only used for the `front end` when buidling an app and would require working with other frameworks to handle 
-the `models - (data)` and `controllers - (business logic)` while having React single handedly manage the views.
+the `models - (data)` and `controllers - (business logic)` while having React single handedly manage the `view`.
 
 The MVC architecture is a JavaScript design pattern for building an applications. It isn't the only design pattern being used and others exist such as `MV*`, `MVP`, `MVVM` but the `MVC architecture` is used quite often and represents the following:
 
@@ -189,7 +189,7 @@ The backed is represented here by `Controller` and `Model` and can be implemente
 - PHP
 
 
-
+Here is a <a href="https://addyosmani.com/resources/essentialjsdesignpatterns/book/#detailmvcmvp" target="_">good reference</a> on the types of MV* patterns.
 
 
 
