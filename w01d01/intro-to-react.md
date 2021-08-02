@@ -143,11 +143,11 @@ By modeling small reusable `Components` that focus on just rendering a specific 
 
 #### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - React Developer Tools - 5min
 
-Let's take a look at a simple app built in React: [Mars Rebuild](https://02nz9.csb.app/)
+Let's take a look at a simple app built in React: <a href="https://02nz9.csb.app/" target="_">Mars Rebuild</a>
 
 Looking at the sites UI we can't really see React.  It's there working under the hook but just not so apparent on the surface.  So let's peel back a layer and see React in action.  
 
-This involves installing [React Chrome Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en)
+This involves installing <a href="https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en" target="_">React Chrome Developer Tools</a>
 
 Take a moment to install the tool and then open `DevTools` to confirm the **Components** and **Profile** tabs have been added:
 
@@ -218,7 +218,7 @@ React then isolates the changes between old and new instances of the Virtual
 
 So now it's time to get started with React. For this demo we will be using an online platform called  `CodeSandbox`. 
 
-<hr>
+<!-- <hr>
 
 #### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 1min
 
@@ -226,9 +226,9 @@ So now it's time to get started with React. For this demo we will be using an on
 - Go to [https://codesandbox.io](https://codesandbox.io) and sign  up for a free account
 - :thumbsup: Click on the thumbs up when you're done.
 
-<hr>
+<hr> -->
 
-Here is the starter code we will be working with: [React CodeSandbox Starter](https://codesandbox.io/s/rctr-8-2-21-getting-starter-v05qc?file=/src/index.js)
+Here is the starter code we will be working with: <a href="https://codesandbox.io/s/rctr-8-2-21-getting-starter-v05qc?file=/src/index.js" target="_">React CodeSandbox Starter</a>
 
 **Note:** Be sure to fork button on the top right:
 
