@@ -193,16 +193,16 @@ Here is a <a href="https://addyosmani.com/resources/essentialjsdesignpatterns/bo
 
 
 
-<!-- ## The Virtual DOM For Efficiency
+ ## The Virtual DOM For Efficiency
 
 The `Document Object Model` or DOM for short is an API that is used to interact with the HTML that is displayed on a page.  The following structure represents the DOM and starts with the `document` object. 
 
 <img src="https://i.imgur.com/qB0cznr.png" width=500/>
 
-If you have ever used `document.getElementById('someid`) or jQuery's `$('#someid`) then you have worked with DOM. 
+If you have ever used `document.getElementById('someid')` or jQuery's `$('#someid')` then you have worked with DOM. 
 
 
-The Virtual DOM is a representation of the actual DOM and is a staging area for changes that will eventually be implemented. Because of that, React can keep track of changes in the actual DOM by comparing different instances of the Virtual DOM.
+The **Virtual DOM** is a representation of the **actual DOM** and is a staging area for changes that will eventually be implemented. Because of that, React can keep track of changes in the actual DOM by comparing different instances of the Virtual DOM.
 
   <img src="https://i.imgur.com/xTxgF0b.png" width=500/>
 
@@ -211,7 +211,9 @@ React then isolates the changes between old and new instances of the Virtual
   view altogether which makes React significantly more efficient.
 
 
-  <img src="https://i.imgur.com/RmHCcDu.png" width=500/> -->
+  <img src="https://i.imgur.com/RmHCcDu.png" width=500/>
+
+  Here is a <a href="https://dev.to/maulik/the-best-example-to-understand-virtual-dom-4lfn" target="_">good example</a> that conveys the benefits of using React and it's Virtual DOM.
 
 
 ### Getting Started With React
