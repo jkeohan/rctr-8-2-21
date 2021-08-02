@@ -27,6 +27,8 @@ We will go around the room and have everyone speak to the following:
 * Have you taken any other GA course, either in person or online
 * A favorite book you've read or Movie/TV show your watching
 
+I'll kick things off and then popcorn it over to someone else, who will popcorn it over to yet someone else and so on.
+
 
 <!-- ### And Now Me... -->
 <!-- 
