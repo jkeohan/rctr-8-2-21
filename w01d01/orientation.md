@@ -136,14 +136,14 @@ Please keep in mind that outside of class/office hours we are at our day jobs/wi
 ## During Class
 
 * Work through today's topics
-* Take a 10min break on the hour
-* Lots of lecture and small mini labs
+* Take a 10min break on the hour (usually 50min past the hour)
+* Lots of lecture and small mini exercises/labs
 * End of class: **Fill out exit tickets**
 
 ## Between Classes
 
 * Review class notes and recordings 
-* **Do homework** 
+* **Do homework**  and **make use of office hours**
 * Ask questions on Slack!
 
 ---
