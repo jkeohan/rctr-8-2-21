@@ -347,7 +347,7 @@ Take special note that once the element is rendered that React renamed `classNam
 
 ### Final Solution
 
-Here is the final [CodeSandbox Solution](https://codesandbox.io/s/seir-831-getting-starter-forked-jogq5?file=/src/index.js:188-372)
+Here is the final <a href="https://codesandbox.io/s/seir-831-getting-starter-forked-jogq5?file=/src/index.js:188-372" target="_">CodeSandbox Solution</a>.
 
 ### Bonus - Becoming A React Developer
 
