@@ -28,8 +28,8 @@ We will go around the room and have everyone speak to the following:
 * A favorite book you've read or Movie/TV show your watching
 
 
-### And Now Me...
-
+<!-- ### And Now Me... -->
+<!-- 
 <img src="https://i.imgur.com/TEEz7t0.jpg" width="500" />
 
 My name is Joe Keohan and I live in NYC, Staten Island specifically. 
@@ -38,14 +38,12 @@ I’ve been in tech for over 20 years, worked at companies both big and small an
 
 I also love working with D3.js to build interactive Data Visualizations and have been a dedicated full time Software Engineering Immersive instructor at GA since 2016, along with teaching their  FEWD, JS and React part time course.
 
-
-
 On personal note I also love to jog, surf, play chess/backgammon talk tech. I am looking forward to sharing my experiences with you and guiding you on a fantastic journey into learning React development!
 
 - LinkedIn: https://www.linkedin.com/in/jkeohan/
 - Portfolio: http://jkeohan.com/
 - Medium Articles: https://medium.com/@jkeohan
-
+ -->
 
 ---
 
