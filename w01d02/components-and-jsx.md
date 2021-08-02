@@ -130,13 +130,13 @@ Some of the requirements are specific to `JSX`, short for `JavaScript And XML`.
 
 As of `React 16.8` Components now come in 3 forms, all of which follow the same requirements and best practices. 
 
-- Class Based (with or without state)
-- Functional Using Hooks - leverages one or more `Hooks` and/or includes `state`
-- Presentational - Renders UI only and is `stateless`
+- Class Based (makes use of state and lifecycle methods)
+- Functional Using Hooks - uses `Hooks` to make use of state and lifecycle methods
+- Presentational - Renders only UI only and is `stateless`
 
 #### Class Based Components
 
-We will introduce `Class Based` Components so that you have some grounding as to what they are, but the remainder of this class and all future lectures Components will be built as `Functional Components` 
+We will introduce `Class Based` Components so that you have some grounding as to what they are, but the remainder of this class and Components will be built as `Functional Components` 
 
 Let's continue working on the previous **CodeSandbox Starter code**. 
 
