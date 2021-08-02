@@ -24,8 +24,8 @@
 | **Slack Channel** | [#rctr-802]() | Primary method of communication for the course |
 | **Zoom Class Room** | Pinned in Slack Channel | Same link every class! |
 | **Exit Ticket** | [link](https://docs.google.com/forms/d/e/1FAIpQLScXC8fZxuNYXEWOIEcwZgGHkUqIW9EoFbrbGR5pVC3fIEfv_g/viewform) | Use the same link at the end of every class! |
-| **Homework** | [link](https://docs.google.com/spreadsheets/d/1znSaQg63lTMiBTZCmFox-6ahVYti0gU_3LQ6V3vVpFo/edit?usp=sharing) | Add CodeSandbox link to HW |
-| **Office Hours** | [link](https://docs.google.com/spreadsheets/d/1znSaQg63lTMiBTZCmFox-6ahVYti0gU_3LQ6V3vVpFo/edit?usp=sharing) | Schedule 1on1's |
+| **Homework** | [link](https://docs.google.com/spreadsheets/d/1znSaQg63lTMiBTZCmFox-6ahVYti0gU_3LQ6V3vVpFo/edit#gid=566709901) | Add CodeSandbox link to HW |
+| **Office Hours** | [link](https://docs.google.com/spreadsheets/d/1znSaQg63lTMiBTZCmFox-6ahVYti0gU_3LQ6V3vVpFo/edit#gid=1977257351) | Schedule 1on1's |
 
 
 
