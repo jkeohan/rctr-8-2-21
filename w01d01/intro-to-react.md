@@ -347,7 +347,7 @@ Take special note that once the element is rendered that React renamed `classNam
 
 Here is the final [CodeSandbox Solution](https://codesandbox.io/s/seir-831-getting-starter-forked-jogq5?file=/src/index.js:188-372)
 
-### Bonus - ### Becoming A React Developer
+### Bonus - Becoming A React Developer
 
 Learning React requires that one have an understanding and working knowledge of basic front end technologies, such as: 
 
