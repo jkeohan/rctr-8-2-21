@@ -192,7 +192,7 @@ Any training missed is your responsibility to make up.
 ## Complete Homework Assignments on Time
 
 
-HW assignments are due the following Tuesday after they have been assigned.  They will be graded by the IA/TAs about a week after submission. If the IA/TA extends to you a chance to re-submit the assignment after feedback, you will have 3 business days to do so.
+HW assignments are due the following Monday after they have been assigned.  They will be graded by the IA/TAs about a week after submission. If the IA/TA extends to you a chance to re-submit the assignment after feedback, you will have 3 business days to do so.
 
 You may have up to a three-day grace period period for extenuating circumstances (see above) if you get approval before the due date.
 
@@ -211,10 +211,12 @@ As the project is two weeks in duration, no grace periods apply. You are expecte
 To qualify for a Letter of Completion, you must satisfactorily complete the final project and present it to your classmates.
 
 Here are some previous student Final Projects:
+
  - [Covid Tracker](https://novel-covid19.netlify.app/)
  - [Dungeon and Dragons](http://dnd-monsters.surge.sh/)
  - [Bible Trip](https://raboriel.github.io/BibleTrip/)
  - [MasterMind](https://pd9ht.csb.app/)
+ - [Mars Remake](https://cn8f5.csb.app/)
 
 
 
