@@ -46,7 +46,7 @@ In order to bridge the gap of what defines a Component, we will be creating a cu
 
 #### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 3min
 
-Open and fork the following [CodeSandbox Card Starter](https://codesandbox.io/s/components-bootstrap-starter-o2ry1?file=/src/App.js).
+Open and fork the following <a href="https://codesandbox.io/s/components-bootstrap-starter-o2ry1?file=/src/App.js" target="_">CodeSandbox Card Starter</a>
 
 :thumbsup: Click on the thumbs up when you've forked.
 
@@ -385,7 +385,7 @@ Now it's you're turn to do the following:
 
 <hr>
 
-[Solution Code](https://codesandbox.io/s/seir-831-bootstrap-solution-r8p9i?file=/src/CardBody.js)
+<a href="https://codesandbox.io/s/seir-831-bootstrap-solution-r8p9i?file=/src/CardBody.js" target="_">Solution Code</a>
 
 ### Lab Time
 
