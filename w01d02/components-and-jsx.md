@@ -140,6 +140,8 @@ We will introduce `Class Based` Components so that you have some grounding as to
 
 Let's continue working on the previous <a target="_" href="https://codesandbox.io/s/rctr-8-2-21-getting-starter-forked-6p4z0?file=/src/index.js">CodeSandbox Starter</a> code. 
 
+**App.js**
+
 In `src` create a new file called `App.js`. 
 
 <img src="https://i.imgur.com/RArVqwo.png" width=200/>
