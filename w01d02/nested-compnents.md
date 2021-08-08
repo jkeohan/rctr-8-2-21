@@ -60,7 +60,7 @@ You should see the following:
 - See if you can determine where the `H1` is being rendered
 - See if you can determine where the 2 cards are being rendered
 
-:thumbsup: Click on the thumbs up when you're done.
+:thumbsup: - Click on the thumbs up when you're done.
 
 - Slack you're answer in the thread created by the instructor
 
