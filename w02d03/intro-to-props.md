@@ -36,7 +36,7 @@ Every Component is passed `props` even if no data has actually been passed.
 
 #### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 3min
 
-Let's revisit our previous [Bootstrap Cards](https://codesandbox.io/s/components-bootstrap-starter-o2ry1?file=/src/App.js) in `React Developer Tools` see if anything `props` related pops out.
+Let's revisit our previous [Bootstrap Cards](https://codesandbox.io/s/rctr-8-2-21-components-bootstrap-starter-forked-d484q) in `React Developer Tools` see if anything `props` related pops out.
 
 <!-- STARTER 
 https://codesandbox.io/s/components-bootstrap-starter-o2ry1?file=/src/App.js
@@ -50,11 +50,11 @@ https://codesandbox.io/s/seir-628-bootstrap-starter-props-llbeh?file=/src/CardIm
 [Bootstrap Cards](https://codesandbox.io/s/components-bootstrap-starter-forked-2bujt?file=/src/App.js)
 -->
 
-If we highlight the `Card1` Component we will see something called `props` to the right.
+If we highlight the `Card1` Component we will see something called `props` in the right pane.  As a matter of fact, if you highlight any Component you will see the same `props` reference. 
 
 <img src="https://i.imgur.com/qzpnB0y.png" /><br>
 
-Since we haven't yet passed any data to these Components there is nothing to show.
+Since we haven't yet passed any data to these Components there is no value in props. 
 
 **End Goal**
 
@@ -70,9 +70,9 @@ Let's take a look at the final [solution](https://zeuwb.csb.app/) and compare ho
 
 #### React Architecture
 
-This is the current React architecture and represents all the Components and their hierarchy.
+This is the current React architecture and represents all the Components and their relationship in the hierarchy.
 
-<img src="https://i.imgur.com/y2BR5wK.png" width=600>
+<img src="https://i.imgur.com/y2BR5wK.png" >
 <hr>
 
 ### Prop Rules
@@ -101,7 +101,7 @@ This is a fairly manual process and doesn't scale well and isn't dynamic.
 
 #### Understanding Props In General
 
-A **prop** is written in a **name=value** format like the other HTML attributes such as:
+A **prop** is written as a **name=value** format like all other HTML attributes such as:
 
 ```html
 <!-- The src property of a image tag -->
@@ -143,11 +143,10 @@ In DevTools you should see the following in the console.
 
 <img src="https://i.imgur.com/HlrtO2T.png" width=300/>
 
-We can see here that `props` is an object and that `title` is a key. This will be the same pattern for when we start passing in multiple props. Each prop passed will be assigned a key:value pair.
+We can see here that `props` is an object and that `title` is a key. This will be the same pattern for when we start passing in multiple props. Each prop passed will be assigned a **key:value** pair.
 
-<hr>
 
-#### :alarm_clock: Activity - 3min
+#### Props Are Immutable
 
 :oncoming_police_car: - Props are immutable which means we can't reassign them a new value within the receiving Component.
 
@@ -169,7 +168,7 @@ So it looks like props was not updated to reflect the edit. This is an example o
 
 So any attempt to change those props directly within the Component will have no effect.
 
-<hr>
+
 
 #### Using Props
 
@@ -388,7 +387,7 @@ Keep in the mind the following:
 
 As we have made some design changes let's take a look at our final React Architecture design that takes into account all Components and the props being passed.
 
-<img src="https://i.imgur.com/WlfxS7X.png" width=600/>
+<img src="https://i.imgur.com/WlfxS7X.png" >
 
 The above was created using [Google Draw](https://docs.google.com/drawings/d/1pG32gpXhkLqtBR2g_SrXWVeX6sza3TAq3zpP0Sjq3QM/edit?usp=sharing)
 
@@ -396,11 +395,11 @@ The architecture represents all the Components and the props that are being pass
 
 ### Bonus - The ...spread Operator and Object Destructuring
 
-Since passing props is a requirement in React there are a few shortcuts we can make when passing them.
+Since passing props is a requirement in React there are a few shortcuts we can take.
 
 #### Using The ...spread Operator
 
-The first is that we can use the `...spread` operator to pass all the key:value's down instead of writing them out one at a time.
+The first is that we can use the `...spread` operator to pass all the **key:value's** down instead of writing them out one at a time.
 
 In `Card.js` let's replace all those hard coded props, except `key`, with the `...spread` operator.
 
@@ -451,7 +450,7 @@ The instructor will perform a walk through of organizing the Components into a f
 Here is the [Final Solution](https://codesandbox.io/s/seir-831-bootstrap-props-starter-zeuwb?file=/src/App.js:72-76) without folders
 
 <!-- WITHOUT FOLDERS -->
-Here is the [Final Solution](https://codesandbox.io/s/bootstrap-solution-seir-1207-2v48i?file=/src/App.js)with folders
+Here is the [Final Solution](https://codesandbox.io/s/bootstrap-solution-seir-1207-2v48i?file=/src/App.js) with folders
 
 
 <!-- [Final Solution](https://codesandbox.io/s/rctrr-8-8-20-bootstrap-solution-uyvmg?file=/src/App.js) -->
