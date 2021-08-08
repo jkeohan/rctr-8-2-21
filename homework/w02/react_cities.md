@@ -39,8 +39,13 @@ For this exercise you will do the following:
 
 **Note:** All functionality must be placed within App and no additional Components should be created. 
 
+### Bonus #1 - Big Image Component
 
-#### Bonus - Additional State
+- Create a new `BigImage` Component that will render the large image
+- Pass the `BigImage` Component the image url it needs based the state of the application
+
+
+#### Bonus #2 - Additional State
 
 - Add more state and/or update existing state in order to keep track of which small image was clicked
 - Place a green border around the image to indicate that it is the image being displayed.
