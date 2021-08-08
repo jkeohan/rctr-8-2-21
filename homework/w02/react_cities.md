@@ -20,7 +20,7 @@ Here is a [working version](https://codepen.io/jkeohan/live/850f8454693590e9772f
 The solution above was implemented using jQuery so there is no React code to inspect via DevTools.  It is meant to provide a working example of the apps functionality. 
 
 ## Starter CodeSandbox
-Here is our [Starter CodeSandbox](https://codesandbox.io/s/rctr-9-8-20-react-cities-starter-kpsk5)
+Here is our [Starter CodeSandbox](https://codesandbox.io/s/react-cities-starter-0q48s?file=/src/App.js)
 
 
 ## Instructions
