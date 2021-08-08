@@ -451,8 +451,7 @@ The instructor will perform a walk through of organizing the Components into a f
 Here is the [Final Solution](https://codesandbox.io/s/seir-831-bootstrap-props-starter-zeuwb?file=/src/App.js:72-76) without folders
 
 <!-- WITHOUT FOLDERS -->
-Here is the [Final Solution](https://codesandbox.io/s/bootstrap-solution-seir-1207-2v48i?file=/src/App.js) with folders
+Here is the [Final Solution](https://codesandbox.io/s/bootstrap-solution-seir-1207-2v48i?file=/src/App.js)with folders
 
 
 <!-- [Final Solution](https://codesandbox.io/s/rctrr-8-8-20-bootstrap-solution-uyvmg?file=/src/App.js) -->
-
