@@ -81,13 +81,13 @@ This is a very important concept to keep in mind as a `re-render` can also initi
 <img src="https://i.imgur.com/njO9Lfv.png">
 
 
-### Rules Of State
+<!-- ### Rules Of State
 :oncoming_police_car: - Here are the rules we need to follow when working with state. 
 
 - State is assigned using the `useState` hook
 - The State value can be assigned any data type
 - The State value is never updated directly but only using its corresponding `setState` function
-- The current State value must always be overwritten with a new value 
+- The current State value must always be overwritten with a new value  -->
 
 
 ### Working With State
@@ -382,6 +382,18 @@ return (
 );
 ```
 
+<hr>
+
+#### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 1min
+
+With our event handlers in place let's take a look at `React DevTools` 
+
+If you highlight `Counter` it should look like the following:
+
+<img src="https://i.imgur.com/hncbSl7.png" />
+
+<hr>
+
 ### Updating State
 
 With our state value in place it's time to provide some functionality to the buttons and allow the user a means to interact with the app and update state.
@@ -529,7 +541,7 @@ The `useEffect` hook is a much broader topic and delves into the `React Componen
 
 <hr>
 
-#### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 5min
+#### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 10min
 
 Let's try a quick activity that should help you apply some of these concepts.  
 
@@ -541,6 +553,10 @@ Let's try a quick activity that should help you apply some of these concepts.
 
 **Bonus**
 - Try refactoring to include the callback function with SetCount.
+
+```js
+setCount((prevState) => prevState + 1);
+```
 
 <hr>
 
@@ -568,8 +584,6 @@ const Counter = () => {
 
   const handleReset= () => {
     setCount(0)
-    // BONUS
-    // setCount( prevState => 0)
   };
 
   return (
