@@ -78,7 +78,7 @@ This is a very important concept to keep in mind as a `re-render` can also initi
 
 ### React Lifecycle
 
-<img src="https://i.imgur.com/27OfciE.png">
+<img src="https://i.imgur.com/njO9Lfv.png">
 
 
 ### Rules Of State
