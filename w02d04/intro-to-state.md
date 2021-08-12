@@ -672,7 +672,7 @@ const handleIncrement = () => {
 }
 ```
 
-**Final Working Solution:** [CodeSandbox](https://codesandbox.io/s/rctr-9-8-20-counter-solution-9i67t?file=/src/Counter.js)
+**Final Working Solution:** [CodeSandbox](https://codesandbox.io/s/rctr-8-2-21-counter-starter-vi0nt?file=/src/Counter.js:782-831)
 
 
 **State of Transition**
