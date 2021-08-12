@@ -49,3 +49,4 @@ For this exercise you will do the following:
 - Add more state and/or update existing state in order to keep track of which small image was clicked
 - Place a green border around the image to indicate that it is the image being displayed.
 - Any other previously active image will have it's border color removed
+
