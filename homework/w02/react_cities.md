@@ -28,8 +28,7 @@ For this exercise you will do the following:
 #### App Component
 - Examine the working live solution and determine the functionality needed
 - Examine the HTML provided in `src/index.html` as this contains the HTML elements needed for the design
-- Determine how best to organize the data needed to render the images
-- Create a file called imageData.js that contains the data needed, in this case images
+- The data for all images is already included in the imageData.js file
 - Using Array.map() loop over the data to create the small images based on the structure you decided
 - Render the array of elements 
 - Import `useState` into App
