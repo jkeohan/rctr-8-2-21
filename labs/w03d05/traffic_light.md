@@ -24,15 +24,15 @@ Here is our <a target="_" href="https://codesandbox.io/s/traffic-light-single-ap
 
 ### React Architecture 
 
-<img src="https://i.imgur.com/DbDr8vx.png" />
+<img src="https://i.imgur.com/z4SoMzb.png" />
   
 <details><summary>bulbData.js</summary>
 
 ```javascript
 export default [
-  {id: 'stop', name:'Stop', color: 'red'},
-  {id: 'slow', name: 'Slow', color: 'yellow'},
-  {id: 'go', name: 'Go', color: 'green'},
+  {name:'Stop', color: 'red'},
+  {name: 'Slow', color: 'yellow'},
+  {name: 'Go', color: 'green'},
 ]
 ```
 </details>
