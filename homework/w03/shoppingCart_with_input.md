@@ -21,6 +21,11 @@ Here is the [Starter CodeSandbox](https://codesandbox.io/s/react-shopping-cart-s
 ## Instructions
 For this exercise you will do the following:
 
+#### App Component
+- Examine the working live solution and look over the HTML elements
+- Will pass down functions to the corresponding Components in order to life those values back into App in order to update state. 
+- Update state to include the value which will then update the UI to show that item
+
 #### Form Component
 
 - Create a new Form Component that provides the user the following inputs:
@@ -29,11 +34,6 @@ For this exercise you will do the following:
   - submit button
 - The inputs will be `controlled` and only when the user submits will the values be captured
 - The Component will pass the data captured to it's parent (App)
-
-#### App Component
-- Examine the working live solution and look over the HTML elements
-- Will pass down a function to the child that will allow it to pass it the product value back up
-- Update state to include the value which will then update the UI to show that item
 
 #### AllTheThings Component
 
@@ -46,8 +46,3 @@ For this exercise you will do the following:
 - Render the list of products in your shopping cart
 - When an item is clicked the value will be lifted to App
 - App will remove the item from state and pass down the new data set to MyShoppingCart
-
-#### Bonuses
-
-- Show the new product at the top of the list
-- Refactor the `uncontrolled` form to be `controlled`
