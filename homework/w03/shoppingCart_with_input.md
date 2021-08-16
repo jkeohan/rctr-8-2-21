@@ -34,6 +34,17 @@ For this exercise you will do the following:
 - Will pass down a function to the child that will allow it to pass it the product value back up
 - Update state to include the value which will then update the UI to show that item
 
+#### AllTheThings Component
+
+- Render a full list of the products with name and price
+- When an item is clicked the value will be lifted to App
+- App will update state and place the item 
+
+#### MyShoppingCart Component
+
+- Render the list of products in your shopping cart
+- When an item is clicked the value will be lifted to App
+- App will remove the item from state and pass down the new data set to MyShoppingCart
 
 #### Bonuses
 
