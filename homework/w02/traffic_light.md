@@ -1,43 +1,56 @@
 # Traffic Light
 
-So far you've learned the following about React:
+Objectives:
 
-- Creating and nesting Components
+- Creating and nest Components
 - Passing props and how to using them in JSX
 - Importing and setting up state
 - Updating state and re-rendering the Component
-- Adding and calling event listeners
-
-Now it's time to put it all together. At a high level you will do the following:
-
-> Create a TrafficLight Component that will implement the functionality based on the working solution. 
 
 ## Working Version
-Here is a [working version](https://1sj6y.csb.app/) of the app so you have a reference of the base functionality that you are being asked to implement. 
+
+Here is a [working CodeSandBox solution](https://zhtbi.csb.app/) of the app so you can examine the components in React DevTools.
 
 ## Starter CodeSandbox
-Here is our [Starter CodeSandbox](https://codesandbox.io/s/rctr-9-8-20-traffic-light-single-app-component-starter-pqrpw?file=/src/App.js)
 
-## Instructions
-For this exercise you will do the following:
+Here is our [Starter CodeSandbox](https://codesandbox.io/s/traffic-light-single-app-component-starter-pqrpw)
+
+### Instructions
+
 
 #### TrafficLight Component
+
 - Examine the working live solution and determine the functionality needed
-- Examine the HTML provided in `src/index.html` as this contains the HTML elements needed for the design
-- Determine how best to organize the data needed to create the control panel and traffic bulbs
-- Create a file called bulbData.js that contains the above data however you decided to organize it
-- Create a `TrafficLight` Component 
-- Import `useState` into `TrafficLight`
-- Work out the remaining logic needed to implement the design
+- Examine the HTML in `App.js` as this contains the HTML elements needed for the design 
+- All the CSS has been included in `styles.css`
+- The `bulbData.js` file contains the data 
+  
+<details><summary>bulbData.js</summary>
+
+```javascript
+export default [
+  {id: 'stop', name:'Stop', color: 'red'},
+  {id: 'slow', name: 'Slow', color: 'yellow'},
+  {id: 'go', name: 'Go', color: 'green'},
+]
+```
+</details>
+
+- Create a `TrafficLight` Component which will be used to render all 3 traffic lights
+- It will receive a prop called `color` and render the color using a style tag: **style={{ background: props.color }}**
+- Keep in mind that all 3 Components will be passed black as this is the starting color for each `Trafficlight`
 
 #### App Component
-- Import the data into App.js
-- Import the `TrafficLight` Component 
-- Render a single `TrafficLight` Component and pass it the data it needs 
 
-**Note:** App will render only a single instance of the TrafficLight Component.  Therefore, in App, do not loop over the array of data and create multiple instances. 
+- Import `bulbData.js` and set it 
+- Import `useState` into `App` as follows: **const [activeBulb, setActiveBulb] = useState({})**
+- Import the `TrafficLight` Component
+- Loop over the bulbData and return a `TrafficLight` Component and pass each the color it needs
+- Create a `handleControls` function that will be passed the object of which button was clicked which it will use to update state.
+- Loop over the bulbData again and return the html based on the existing design.  Also make sure to assign an `onClick` event that is passed the object. 
 
 ### Bonus - Bulb Component
 
 - Create a new `Bulb` Component that will render the a single bulb
 - Pass the `Bulb` Component the color it needs based the state of the application
+  
