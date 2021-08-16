@@ -310,6 +310,10 @@ const SmallImage = ({city, src, handleClick}) => {
 export default SmallImage
 ```
 
+### Solution Code
+
+[Solution CodeSandbox]() - TBD
+
 ### Lab Time
 
 The instructor will provide the lab
