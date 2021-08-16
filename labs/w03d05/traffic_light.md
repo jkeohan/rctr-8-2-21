@@ -22,7 +22,7 @@ Here is our <a target="_" href="https://codesandbox.io/s/traffic-light-single-ap
 - All the CSS has been included in `styles.css`
 - The `bulbData.js` file contains the data 
 
-### React Architecture and
+### React Architecture 
 
 <img src="https://i.imgur.com/DbDr8vx.png" />
   
