@@ -21,6 +21,10 @@ Here is our <a target="_" href="https://codesandbox.io/s/traffic-light-single-ap
 - Examine the HTML in `App.js` as this contains the HTML elements needed for the design 
 - All the CSS has been included in `styles.css`
 - The `bulbData.js` file contains the data 
+
+### React Architecture and
+
+<img src="https://i.imgur.com/DbDr8vx.png" />
   
 <details><summary>bulbData.js</summary>
 
