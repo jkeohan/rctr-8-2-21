@@ -487,13 +487,15 @@ Doing so will capture both inputs and update state
 <!-- 
 For now we are only going to comment out the `setLogin` code in there as you will be working out this logic in the lab. -->
 
-### Bonus #1- Lifting State
+### Bonus #1- Working With `<form>` Elements
+
+If time permits the instructor will perform a codealong/demo of updating the `Form` Component to include a `<form>` element which makes use of the `onSubmit` event.
+
+### Bonus #2- Lifting State
 
 If time permits the instructor will perform a codealong/demo of lifting state and conditional rendering the `Form` Component
 
-### Bonus #2- Working With `<form>` Elements
 
-If time permits the instructor will perform a codealong/demo of updating the `Form` Component to include a `<form>` element which makes use of the `onSubmit` event.
 
 [Solution CodeSandbox](https://codesandbox.io/s/rctr-9-8-20-login-form-in-class-demo-b3hiz?file=/src/components/App.js)
 
