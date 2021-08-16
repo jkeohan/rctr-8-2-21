@@ -15,7 +15,8 @@ Now it's time to put it all together.
 Here is a [working version](https://cmix9.csb.app/) of the app so you have a reference of the base functionality that you are being asked to implement. 
 
 ## Starter CodeSandbox
-Here is our [Starter CodeSandbox](https://codesandbox.io/s/react-shopping-cart-solution-1prws?file=/src/App.js) 
+<!-- Here is our [Starter CodeSandbox](https://codesandbox.io/s/react-shopping-cart-solution-1prws?file=/src/App.js) -->
+Here is the [Starter CodeSandbox](https://codesandbox.io/s/react-shopping-cart-starter-e2km4)
 
 ## Instructions
 For this exercise you will do the following:
