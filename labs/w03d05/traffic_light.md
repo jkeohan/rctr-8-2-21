@@ -17,9 +17,6 @@ Here is our <a target="_" href="https://codesandbox.io/s/traffic-light-single-ap
 
 ### Instructions
 
-
-#### TrafficLight Component
-
 - Examine the working live solution and determine the functionality needed
 - Examine the HTML in `App.js` as this contains the HTML elements needed for the design 
 - All the CSS has been included in `styles.css`
@@ -36,9 +33,15 @@ export default [
 ```
 </details>
 
+
+#### TrafficLight Component
+
+
+
 - Create a `TrafficLight` Component which will be used to render all 3 traffic lights
 - It will receive a prop called `color` and render the color using a style tag: **style={{ background: props.color }}**
-- Keep in mind that all 3 Components will be passed black as this is the starting color for each `Trafficlight`
+- Keep in mind that all 3 Components will need to run some conditional logic that determines if it should render a `black` background or the color that it represents. 
+- **HINT**: A Ternary Operator is a good use case to use for the conditional logic. 
 
 #### App Component
 

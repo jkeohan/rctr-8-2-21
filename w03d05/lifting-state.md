@@ -64,7 +64,7 @@ Let's take a look at `Cities Of The World`.  The app is divided into small image
 
 Clicking on any small image will assign the big image the same image url. 
 
-You may or may not have worked on this already so here is a [working CodeSandbox](https://codesandbox.io/s/rctr-9-8-20-react-cities-solution-klk6l?file=/src/App.js) of the app. 
+You may or may not have worked on this already so here is a [working CodeSandbox](https://codesandbox.io/s/rctr-9-8-20-react-cities-solution-klk6l?file=/src/App.js) of the app which we will use as our starter code.
 
 <img src="https://i.imgur.com/LI6KqAI.jpg" width=300/><br>
 
@@ -126,7 +126,7 @@ import React from 'react';
 
 const BigImage = (props) => {
  return (
-  <img src={props.image} id="bigimage" alt='bigImaage'/>
+  <img src={props.image} id="bigimage" alt={props.city}/>
  )
 }
 
@@ -183,7 +183,6 @@ const SmallImage = (props) => {
         
     )
 }
-}
 ```
 
 Let's copy the `<img>` element from the map and paste it in the `SmallImage` Component
@@ -203,7 +202,9 @@ const SmallImage = (props) => {
 }
 ```
 
-The only prop that needs to be removed when we copy the HTML into this Component is `key={index}`.  This `key:value` pair is only required within the `Array.map()`. 
+The only prop that needs to be removed when we copy the HTML into this Component is `key={index}`.  
+
+**NOTE**: The `key:value` pair is only required within the `Array.map()`. 
 
 Since the values for `id, src, alt` will be passed down from the parent we will need to update them to replace `image` with `props`
 
