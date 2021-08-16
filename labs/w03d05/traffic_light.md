@@ -9,7 +9,7 @@ Objectives:
 
 ## Working Version
 
-Here is a <a target="_" href="https://zhtbi.csb.app/">working CodeSandBox solution</a> of the app so you can examine the components in React DevTools.
+Here is a <a target="_" href="https://n9wzs.csb.app/">working CodeSandBox solution</a> of the app so you can examine the components in React DevTools.
 
 ## Starter CodeSandbox
 
@@ -34,26 +34,27 @@ export default [
 </details>
 
 
-#### TrafficLight Component
+#### Bulb Component
 
-
-
-- Create a `TrafficLight` Component which will be used to render all 3 traffic lights
-- It will receive a prop called `color` and render the color using a style tag: **style={{ background: props.color }}**
+- Create a `Bulb` Component which will be used to render all 3 bulbs
+- It will receive the both `color` and `id` as props
 - Keep in mind that all 3 Components will need to run some conditional logic that determines if it should render a `black` background or the color that it represents. 
 - **HINT**: A Ternary Operator is a good use case to use for the conditional logic. 
 
+#### Button Component
+
+- Create a `Button` Component which will be used to render all 3 buttons 
+- It will receive the following props
+  - all the data for that specific button 
+  - a handleClick function that will update state
+
+
 #### App Component
 
-- Import `bulbData.js` and set it 
-- Import `useState` into `App` as follows: **const [activeBulb, setActiveBulb] = useState({})**
-- Import the `TrafficLight` Component
-- Loop over the bulbData and return a `TrafficLight` Component and pass each the color it needs
+- Import `bulbData.js` a as `bulbData`
+- Import `useState` into `App` and configure follows: **const [activeBulb, setActiveBulb] = useState({})**
+- Import the `Bulb` Component
+- Import the `Button` Component
 - Create a `handleControls` function that will be passed the object of which button was clicked which it will use to update state.
-- Loop over the bulbData again and return the html based on the existing design.  Also make sure to assign an `onClick` event that is passed the object. 
-
-### Bonus - Bulb Component
-
-- Create a new `Bulb` Component that will render the a single bulb
-- Pass the `Bulb` Component the color it needs based the state of the application
-  
+- Loop over the bulbData and return a `Bulb` Component and pass it the data it needs
+- Loop over the bulbData and return a `Bulb` Component and pass it the data it needs
