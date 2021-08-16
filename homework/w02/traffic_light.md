@@ -9,11 +9,11 @@ Objectives:
 
 ## Working Version
 
-Here is a [working CodeSandBox solution](https://zhtbi.csb.app/) of the app so you can examine the components in React DevTools.
+Here is a <a target="_" href="https://zhtbi.csb.app/">working CodeSandBox solution</a> of the app so you can examine the components in React DevTools.
 
 ## Starter CodeSandbox
 
-Here is our [Starter CodeSandbox](https://codesandbox.io/s/traffic-light-single-app-component-starter-pqrpw)
+Here is our <a target="_" href="(https://codesandbox.io/s/traffic-light-single-app-component-starter-pqrpw">Starter CodeSandbox</a>
 
 ### Instructions
 

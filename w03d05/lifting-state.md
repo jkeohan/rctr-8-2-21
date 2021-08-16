@@ -300,7 +300,7 @@ const SmallImage = ({city, src, handleClick}) => {
     id={city}
     src={src}
     alt={city}
-    // key={index} - this is no longer needed here as it is only assigned within the loop
+    {/* key={index} - this is no longer needed here as it is only assigned within the loop */}
     onClick={() => handleClick(props)}
   />
  )
