@@ -61,4 +61,4 @@ export default [
 - Import the `Button` Component
 - Create a `handleControls` function that will be passed the object of which button was clicked which it will use to update state.
 - Loop over the bulbData and return a `Bulb` Component and pass it the data it needs
-- Loop over the bulbData and return a `Bulb` Component and pass it the data it needs
+- Loop over the bulbData and return a `Button` Component and pass it the data it needs
