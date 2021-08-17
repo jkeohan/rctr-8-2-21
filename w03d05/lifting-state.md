@@ -312,7 +312,7 @@ export default SmallImage
 
 ### Solution Code
 
-[Solution CodeSandbox]() - TBD
+[Solution CodeSandbox](https://codesandbox.io/s/cities-multiple-comp-lift-state-m9kt6?file=/src/App.js) 
 
 ### Lab Time
 
