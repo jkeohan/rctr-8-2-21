@@ -500,6 +500,6 @@ If time permits the instructor will perform a codealong/demo of lifting state an
 
 [Solution CodeSandbox - TBD]()
 
-### Lab Time
+<!-- ### Lab Time
 
-The instructor will provide the lab
+The instructor will provide the lab -->
