@@ -303,7 +303,7 @@ Now let's update the state value once the button is submitted.
 const handleSubmit = () => {
     setLogin({
         email: inputRefEmail.current.value,
-        password: inputRefEmail.current.value
+        password: inputRefPassword.current.value
     })
 };
 ```
