@@ -84,7 +84,7 @@ Working with an uncontrolled input in React involves making use of the `useRef` 
 
 <!-- You can also choose to work on this codebase using this [CodeSandbox Starter](https://codesandbox.io/s/rctr-9-8-20-login-form-starter-forked-0v78f) -->
 
-Here is the [CodeSandbox Starter](https://codesandbox.io/s/rctr-9-8-20-login-form-starter-forked-0v78f)
+Here is the [CodeSandbox Starter](https://codesandbox.io/s/login-form-starter-0v78f)
 
 
 ### Uncontrolled inputs
