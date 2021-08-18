@@ -44,5 +44,5 @@ For this exercise you will do the following:
 #### MyShoppingCart Component
 
 - Render the list of products in your shopping cart
-- When an item is clicked the value will be lifted to App
-- App will remove the item from state and pass down the new data set to MyShoppingCart
+- When an item is clicked the index of that item in the array will be lifted to App
+- App will remove the item from the array based on its index and update state
