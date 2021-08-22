@@ -498,7 +498,7 @@ If time permits the instructor will perform a codealong/demo of lifting state an
 <!-- 
 [Solution CodeSandbox](https://codesandbox.io/s/rctr-9-8-20-login-form-in-class-demo-b3hiz?file=/src/components/App.js) -->
 
-[Solution CodeSandbox - TBD]()
+[Solution CodeSandbox](https://codesandbox.io/s/login-form-starter-rctr-8-2-21-oeumy?file=/src/components/App.js:602-638)
 
 <!-- ### Lab Time
 
