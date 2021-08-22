@@ -23,7 +23,7 @@ For this exercise you will do the following:
 
 #### App Component
 - Examine the working live solution and look over the HTML elements
-- Will pass down functions to the corresponding Components in order to life those values back into App in order to update state. 
+- Will pass down functions to the corresponding Components in order to liff those values back into App and update state. 
 - Update state to include the value which will then update the UI to show that item
 
 #### Form Component
