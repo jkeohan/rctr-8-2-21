@@ -18,8 +18,7 @@ Creator:  Joe Keohan<br>
 After this lesson you will be able to:
 
 - Explain the 3 phases of the Component lifecycle
-- Run code within each of the 3 phases
-- Use `useEffect` to implement the 3 main lifecycle methods
+- Use `useEffect` to implement code in each of the 3 main lifecycle methods
 
 ## Framing
 
@@ -33,7 +32,7 @@ The Components themselves may need to keep track of if, and when, it's been adde
 
 <img src="https://i.imgur.com/nCZVlLs.jpg" />
 
-<hr>
+<!-- <hr>
 
 #### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 5min
 
@@ -57,7 +56,7 @@ The Instructor will now direct your attention to those elements the difference b
 
 **Note:** The implementation of these two sites were created for the following medium article I wrote on [3-ways-to-implement-responsive-design-in-your-react-app](https://medium.com/@jkeohan/3-ways-to-implement-responsive-design-in-your-react-app-bcb6ee7eb424)
 
-<hr>
+<hr> -->
 
 ## The 3 Main Phases Of The Component Lifecycle
 
@@ -73,32 +72,43 @@ Below are the 3 phases that a Component goes through during it's lifetime.
 
 Each phase can call a specific `lifecycle method` that runs as the last function call in that cycle.
 
-Here are diagrams that convey the lifecycles as they apply to Classes and Hook based Components.
+Here are diagrams that convey the lifecycles as they apply to Classes Components.
 
 <img src="https://i.imgur.com/eNlBcr8.png" />
 
+Here are diagrams that convey the lifecycles as they apply to Hook based Components.
+
 <img src="https://i.imgur.com/arj7aZD.png" />
 
-Although up to this point we've only worked with `Functional` Components, in lue of `Classes`, however under the hood React is indeed initializing and calling them as if they were written as classes. The diagram represents the Components referenced as classes.
+<!-- Although up to this point we've only worked with `Functional` Components, in lue of `Classes`, however under the hood React is indeed initializing and calling them as if they were written as classes.  -->
 
-**Mounting:** called when a component is created and inserted into the DOM.
+The table below shows the corresponding way to make use of the **useEffect** hook to implement the class based LifeCycle methods.
 
-- **constructor** - initializes the component and sets state via `useState`
-- **`render()`** - `returns` the UI
+| Phase      | useEffect | Class Method 
+| ----------- | ----------- | ----------- |
+| Mounting     | useEffect(() => {}, []) |  ComponentDidMount    |
+| Updating  | useEffect(() => {})       | ComponentDidUpdate
+| Updating  | useEffect(() => {}, [someValueToMonitor])     | ComponentDidUpdate but only if value changes
+| Unmounting | useEffect(() => { return () => { } })       | ComponentWillUnmount
+
+<!-- **Mounting:** called when a component is created and inserted into the DOM. -->
+
+<!-- - **function** - initializes the component
+- **`return()`** - `returns` the UI
 - **DOM and Refs** - done using `useRef`
-- **componentDidMount()** - performed using `useEffect(() => {}, [])`
+- **useEffect** - performed using `useEffect(() => {}, [])`
 
 **Updating:** usually triggered by changes in props or state.
 
-- **setState()** - updates state which triggers the re-render
-- **`render()`** - `returns` the UI
+- **setState() function** - updates state which triggers the re-render
+- **`return()`** - `returns` the UI
 - **DOM and Refs** - done using `useRef`
-- **componentDidUpdate()** - performed using `useEffect(() => {})` (No [] included)
-- **componentDidUpdate()** performed using `useEffect(() => {}, [someValueToMonitor])`
+- **useEffect** - performed using `useEffect(() => {})` (No [] included)
+- **useEffect** performed using `useEffect(() => {}, [someValueToMonitor])`
 
 **Unmounting:** called when a component is being removed from the DOM.
 
-- **componentDidUnmount()** - `useEffect(() => {})` (No [] included)
+- **useEffect** - `useEffect(() => {})` (No [] included) -->
 
 ## The `useEffect` Hook
 
@@ -124,7 +134,7 @@ As we pointed out during the overview of the React lifecycle, `useEffect` and be
 
 #### Starter Code
 
-Here is the starter code we will be working with: [odeSandbox Starter](https://codesandbox.io/s/useeffect-starter-forked-t9j5u?file=/src/Counter.js)
+Here is the starter code we will be working with: [CodeSandbox Starter](https://codesandbox.io/s/useeffect-starter-forked-t9j5u?file=/src/Counter.js)
 
 <!-- Here is the starter code we will be working with: [odeSandbox Starter](https://codesandbox.io/s/useeffect-starter-9cpw0?file=/src/Counter.js)  -->
 
@@ -145,7 +155,7 @@ Let's take a look at the [Solution](https://9mdkb.csb.app/) we are looking to im
 - clicking on the `pause` button pauses the timer
 - clicking on `start` re-initiates the counting sequence.
 
-It's safe to say that our current knowledge of React will fall short to implement that functionality and that we will need to make use of the `useEffect` Hook to implement the logic.
+Implementing this type of functionality requires that we make use of the  `useEffect` Hook.
 
 But let's first push the envelope and see how far we can go without `useEffect` before we hit our first wall.
 
@@ -215,9 +225,8 @@ Calling `startTimer()` updates state which triggers the Component to update, whi
 
 ### ComponentDidMount - Run Once On Mount
 
-So we need a means of calling `startTimer()` when the Component is initially mounted and not on any subsequent re-renders. For that use case we can use:
+So we need a means of calling `startTimer()` when the Component is initially mounted but not on any subsequent re-renders. For that use case we make use of the **useEffect** hook.  
 
-`useEffect(() => {}, [])`
 
 Since `useEffect` is a hook it needs to be imported.
 
@@ -225,7 +234,15 @@ Since `useEffect` is a hook it needs to be imported.
 import React, { useState, useEffect } from 'react';
 ```
 
-`useEffect` takes in a callback function as it's first param and an empty `[]` as its second. The empty `[]` is how we tell `useEffect` to run only on the initial mount.
+We will implement **useEffect** in the following way:
+
+```js
+useEffect(() => {}, [])
+```
+
+
+
+`useEffect` takes in a callback function as it's first param and an array (optional) `[]` as its second parm. The empty `[]` is how we tell `useEffect` to run only on the initial mount.
 
 ```js
 useEffect(() => {
@@ -233,6 +250,8 @@ useEffect(() => {
 	startTimer();
 }, []);
 ```
+
+#### Adding a SetInterval
 
 Ok. So now we have a means of calling it a single time. That's enough to to get us started and now we can add the additional logic `setInterval` logic to increment every second.
 
@@ -267,7 +286,7 @@ If we also click on `Start Timer` a few times in a row we will see that it incre
 
 #### ComponentWillUnmount
 
-One thing that hasn't been mentioned yet is that every time a re-render happens, we schedule a new effect replacing the previous effect. Although in our use case `useEffect` isn't being called there is still a need to clear the interval just before the re-render. This falls ito the category of `ComponetWillUnmount`
+One thing that hasn't been mentioned yet is that every time a re-render happens, we create a new effect replacing the previous one. Although in our use case `useEffect` isn't being called there is still a need to clear the interval just before the re-render. This falls ito the category of `ComponetWillUnmount`
 
 React must clean up the previous effect before applying the next effect. In our case we need to remove the previous instance of the `setTimer` and create a new instance.
 
