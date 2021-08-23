@@ -292,7 +292,7 @@ React must clean up the previous effect before applying the next effect. In our 
 
 For this we need to refactor `useEffect` to do the following:
 
-- im must clear the previous `setInterval` before the new instance of `useEffect` is called
+- it must clear the previous `setInterval` before the new instance of `useEffect` is called
 
 To do this we add a final `return` statement that is passed a callback function.
 
@@ -366,7 +366,7 @@ return (
 
 **Complete Refactor**
 
-Here is the code that includes the complete refactor.
+Here is the code that includes the complete refactor and the [CodeSandbox Solution](https://codesandbox.io/s/useeffect-solution-9cpw0)
 
 <details><summary>Solution</summary>
 
