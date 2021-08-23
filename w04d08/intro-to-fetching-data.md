@@ -80,7 +80,7 @@ There are **two** major serialized data formats...
 
 #### JSON
 
-**JSON** stands for "JavaScript Object Notation" and has become a universal standard for serializing native data structures for transmission. It is light-weight, easy to read and quick to parse.
+**JSON** stands for **JavaScript Object Notation** and has become a universal standard for serializing native data structures for transmission. It is light-weight, easy to read and quick to parse.
 
 ```json
 {
@@ -92,7 +92,7 @@ There are **two** major serialized data formats...
 
 #### XML
 
-**XML** stands for "eXtensible Markup Language" and is the granddaddy of serialized data formats (itself based on HTML). XML is fat, ugly and cumbersome to parse. It remains a major format, however, due to its legacy usage across the web. You'll probably always favor using a JSON API, if available.
+**XML** stands for **eXtensible Markup Language** and is the granddaddy of serialized data formats (itself based on HTML). XML is fat, ugly and cumbersome to parse. It remains a major format, however, due to its legacy usage across the web. You'll probably always favor using a JSON API, if available.
 
 ```
 <users>
@@ -105,12 +105,12 @@ There are **two** major serialized data formats...
 </users>
 ```
 
-**Many APIs publish data in multiple formats, for example...**
+<!-- **Many APIs publish data in multiple formats, for example...**
 
 * [http://app.quotemedia.com/data/getQuotes.json?symbols=AAPL](http://app.quotemedia.com/data/getQuotes.json?symbols=AAPL)
-* [http://app.quotemedia.com/data/getQuotes.xml?symbols=AAPL](http://app.quotemedia.com/data/getQuotes.xml?symbols=AAPL)
+* [http://app.quotemedia.com/data/getQuotes.xml?symbols=AAPL](http://app.quotemedia.com/data/getQuotes.xml?symbols=AAPL) -->
 
-### Parsing JSON
+<!-- ### Parsing JSON
 
 You've seen a few examples of JSON and how data can be organized. Here is some data for the Apple. 
 
@@ -123,7 +123,7 @@ You've seen a few examples of JSON and how data can be organized. Here is some d
 "name": "Apple Inc",
 "ticker": "AAPL"
 }
-```
+``` -->
 
 ## Tools Of The Trade
 
@@ -158,7 +158,7 @@ Below is a non-exhaustive list of some free API's you can use. There are _many_ 
   1. News: https://newsapi.org/
 
 
-<hr>
+<!-- <hr>
 
 #### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 5min
 
@@ -174,7 +174,7 @@ Let's capture some of the APIs you've discovered and their category.
 - API url
 
 
-<hr>
+<hr> -->
 
 ## API
 
