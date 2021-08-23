@@ -318,7 +318,7 @@ useEffect(() => {
 
 #### ClearInterval Once More
 
-Even with this implementation were still faced with the same problem that multiple clicks to `Start Timer` will cause the timer count much faster.
+Even with this implementation were still faced with the same problem that multiple clicks to `Start Timer` will cause the timer to count much faster.
 
 In order to resolve this we need to add one more `clearInterval` to `startTimer` to clear out any timer that was initiated before the next interval value.
 
