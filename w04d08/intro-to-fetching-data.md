@@ -354,6 +354,8 @@ We're going to build a tiny React single page app that has a text input, a butto
 
 ### React Architecture 
 
+Here is the [CodeSandbox Solution]()/https://3ivxv.csb.app/
+
 Our React architecture will look like the following:
 
 ```
