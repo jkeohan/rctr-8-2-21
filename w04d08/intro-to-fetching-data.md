@@ -42,11 +42,11 @@ I'm sure you have so let's take a look.
 
 <hr>
 
-#### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 5min
+#### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 2min
 
 Take a moment to examine raw data sent from an API
 
-- First install the [JSON Formatter Chrome Extension](https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa?hl=en)
+- If you haven't already done so install the [JSON Formatter Chrome Extension](https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa?hl=en)
 - Now paste the following url into your browser
 
 ```js
@@ -66,13 +66,14 @@ Go back and view the data as `Parsed` and take a moment to examine the results
 :question: - Try and answer the following questions:
 - What is the most top level JS datatype that contains all the data
 - Which key contains the user data we are looking for?
+- what is the full path to the users first name?
 
 <hr>
 
 
 ### What is Serialized Data?
 
-As we just saw all data sent via HTTP are strings. Unfortunately, what we really want to pass between web applications is **structured data** (i.e., arrays and hashes). Thus, native data structures can be **serialized**  into a string representation of the data. 
+As we just saw vhen viewing the  all data sent via HTTP are strings. Unfortunately, what we really want to pass between web applications is **structured data** (i.e., arrays and hashes). Thus, native data structures can be **serialized**  into a string representation of the data. 
 
 This string can be transmitted and then **parsed** back into data by another web agent.
 
@@ -249,7 +250,7 @@ http://api.giphy.com/v1/gifs/search?q=ryan+gosling&api_key=CqhoGv4lcfGV4wOpxPVfb
 ```
 
 
-<hr>
+<!-- <hr>
 
 #### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 10min
 
@@ -263,7 +264,7 @@ API's
 - [http://api.giphy.com](http://api.giphy.com)
 - [Open Weather Map](https://home.openweathermap.org/users/sign_up)
 
-<hr>
+<hr> -->
 
 ## A Note On JSON
 
@@ -291,8 +292,8 @@ There  are also online tools that can help you validate JSON and confirm that it
 
 JSON includes 2 methods that allow us to either convert an object to a string or parse it back into an object:
 
-- JSON.stringify() - converts JS to a string
-- JSON.parse() - converts a JS string back into its original format
+- **JSON.stringify()** - converts JS to a string
+- **JSON.parse()** - converts a JS string back into its original format
 
 The OMDB API first uses JSON.stringify() to convert the data into a string and then the JSON Formatter Chrome Extension converts it back into a object.
 
@@ -319,12 +320,16 @@ let movie = {
 let stringifiedMovie = JSON.stringify(movie)
 // this is now one long string of text
 stringifiedMovie
+
+=> "{\"Title\":\"Eraserhead\",\"Year\":\"1977\",\"Website\":\"N/A\",\"Response\":\"True\"}"
 ```
 
 **Data Parsed**
 ```js
-let parsedMovie = JSON.parse(stringifieMovie)
-parsedMoovie
+let parsedMovie = JSON.parse(stringifiedMovie)
+parsedMovie
+
+=> {Title: "Eraserhead", Year: "1977", Website: "N/A", Response: "True"}
 ```
 
 <hr>
@@ -341,8 +346,9 @@ We're going to build a tiny React single page app that has a text input, a butto
 ### Setup
 
 - Fork the following [CodeSandbox Starter](https://codesandbox.io/s/omdb-movie-app-starter-q6c16?file=/src/App.js)
-- Pass the `handleSubmit` method in `App` down to the `Form` Component and call it the same name. 
-- Confirm that the console log is outputting the captured value
+- Examine the **Form** component and determine if its setup as **Controlled or Uncontrolled**.
+<!-- - Pass the `handleSubmit` method in `App` down to the `Form` Component and call it the same name. 
+- Confirm that the console log is outputting the captured value -->
 
 <hr>
 
@@ -399,7 +405,7 @@ If successful then we should see the following:
 
 ## The `useEffect` Hook
 
-Now it's time to use the `useEffect` Hook lets us perform the `side effects` of making the initial API call. 
+Now it's time to use the `useEffect` Hook which lets us perform `side effects` of making the initial API call. 
 
 > A side effect is any application state change that is observable outside the called function other than its return value. 
 
@@ -411,8 +417,8 @@ Several examples of `side effects` are:
 As we pointed out in the last lecture on React lifecycles, `useEffect` and be run in one of 3 ways: 
 
 - `useEffect(() => {}, [])` - empty [] means this will only run once when the Component mounts
-- `useEffect(() => {})`  - no [] means this will run on every render/re-render
-- `useEffect(() => {}, [someValueToMonitor])` - run on mount and then only if the value has changed
+- `useEffect(() => {})`  - no [] means this will run on every initial render and re-render
+- `useEffect(() => {}, [someValueToMonitor])` - run on initial render and then only if the value has changed on every additional re-render
 
 
 ### ComponentDidMount
@@ -425,7 +431,7 @@ In order for this to work properly we must make sure that `movieTitle` contains 
 const [movieTitle, setMovieTitle] = useState('star wars')
 ```
 
-And now we will setup `useEffect` as `ComponentDidMount`.  
+And now we will setup `useEffect` as `ComponentDidMount` which runs only once when the component is mounted.  
 
 ```js
   useEffect(() => {
@@ -497,6 +503,18 @@ Finally, let's add some conditional logic that will either render `MovieInfo` an
   );
 ```
 
+However a more terse way to write the conditional logic is as follows:
+
+```js
+  return (
+    <div className="App">
+      <div>Best Movie App Ever</div>
+      <Form handleSubmit={handleSubmit} />
+      {movieData.Title && <MovieInfo movie={movieData} /> }
+    </div>
+  );
+```
+
 
 ### ComponentDidUpdate
 
@@ -534,7 +552,7 @@ useEffect(() => {
 
 
 
-##  Bonus - Async Functions
+##  Bonus - ES8 - Async/Await Functions
 
 Up to this point we've covered quite a few ES6 features however many more features have been introduced with ES7, ES8, ES9 and the most recent, ES10.
 
@@ -551,7 +569,13 @@ The newest feature will be working with today is `ES8 - Async Functions`
 
 The keyword `await` makes JavaScript wait until a line of code completely finishes executing. However, you can only use `await` inside of an `async` function. How do we turn a function into an `async` function? 
 
-Easy! We just put the word `async` in front of the word `function`. With arrow functions, we just write `async` before the parenthesis, like this: `async () => { etc...}`. So, if we use `async` and `await` we can refactor our code and remove the `.then()` methods.
+Easy! We just put the word `async` in front of the word `function`. With arrow functions, we just write `async` before the parenthesis, like this: 
+
+```js
+async () => { etc...}
+```
+
+ So, if we use `async` and `await` we can refactor our code and remove the `.then()` methods.
 
 In order to force the code to run asynchronously we then add the keyword `await` before and statement that returns a `Promise`. In the example below both `fetch` and `res.json()` return `Promises` and must be preceded by the keyword `await`
 
@@ -569,6 +593,23 @@ useEffect(() => {
 
 }, [movieTitle])
 ```
+
+<hr>
+
+#### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 10min
+
+Perform the following:
+
+- Sign up for API keys for the API's listed below
+- Using your browser confirm that you are able to retrieve data from the API's
+
+API's
+
+- [http://api.giphy.com](http://api.giphy.com)
+- [Open Weather Map](https://home.openweathermap.org/users/sign_up)
+
+<hr>
+
 
 
 ## Resources:
