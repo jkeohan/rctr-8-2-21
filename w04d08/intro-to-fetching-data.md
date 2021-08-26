@@ -552,7 +552,7 @@ useEffect(() => {
 }, [movieTitle])
 ```
 
-[Solution CodeSandbox](/https://codesandbox.io/s/omdb-movie-app-starter-forked-3ivxv)
+[Solution CodeSandbox](https://codesandbox.io/s/omdb-movie-app-starter-forked-3ivxv)
 
 ##  Bonus - ES8 - Async/Await Functions
 
