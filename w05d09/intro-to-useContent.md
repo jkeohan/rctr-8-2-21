@@ -75,7 +75,7 @@ But, as your tree grows, you'll find yourself passing props down multiple levels
 
 #### Use useContent
 
-A much better way would be to provide access to state at a global level and have the child Component access it directly. 
+A much better way would be to provide access to state at a global level and have the child Component access it directly.  This is where we would make use of the **useContext** hook. 
 
 <img src="https://i.imgur.com/izs3Rxn.png" width=400/>
 
