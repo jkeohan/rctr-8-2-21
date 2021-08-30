@@ -28,7 +28,7 @@ A good analogy of Context vs Props is when we shop online.  Props is like buying
 
 Let's take a few minutes to review the [useContext](https://reactjs.org/docs/hooks-reference.html)  hook official documentation
 
-**Note:** As mentioned when used with `useReducer` the two Hook create a low level version of [Redux](https://redux.js.org/), which is a state management tool for JavaScript applications and has become synonymous with React state management. 
+**Note:** As mentioned when used with `useReducer` the two Hooks create a low level version of [Redux](https://redux.js.org/), which is a state management tool for JavaScript applications and has become synonymous with React state management. 
 
 <hr>
 
@@ -98,7 +98,7 @@ When using Context, you'll be dealing with a *Provider* component and *Consumer*
 
 <hr>
 
-#### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 2min
+#### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 4min
 
 Lets take a look at [AirBnB](https://www.airbnb.com/) in DevTools in order to see the `Provider/Consumer` model in action. 
 
