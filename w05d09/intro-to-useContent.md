@@ -69,7 +69,7 @@ But, there are times where pieces of state need to be used across the entire app
 
 So far, we have been passing props down from parent to child components. In most instances, this is the easiest way to handle sharing information between parent and child components.
 
-But, as your tree grows, you'll find yourself passing props down through multiple levels. In the example below sending a single value of state all the way down to the the last child requires passing it down as props through every intermediary Component in the hierarchy. 
+But, as your tree grows, you'll find yourself passing props down multiple levels. In the example below sending a single value of state all the way down to the the last child requires passing it down as props through every intermediary Component in the hierarchy. 
 
 <img src="https://i.imgur.com/G08K3c9.png" width=400/>
 
