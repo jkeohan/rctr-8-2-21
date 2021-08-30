@@ -51,6 +51,8 @@ There are a lot of ways to answer this question - ultimately, it comes down to y
 <details><summary>Answer</summary>
 
 **Manage state in the Component or nearest "ancestor" of the components that need to make use of it**.
+ 
+ <img src="https://i.imgur.com/SdWgQNt.png" />
 
 </details>
 
