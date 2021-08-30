@@ -59,5 +59,6 @@ The class schedule is as follows:
 | 20  | Wed 10/06 |  Final Project 1on1's  | <li>Do: Final Project - MVP</li> |  |
 | 21  | Mon 10/11 | Project Presentations |  |  |
 
+<!--  -->
 
 <!-- <li>Read: [D3 & React](https://wattenberger.com/blog/react-and-d3#creating-svg-elements)</li>  -->
