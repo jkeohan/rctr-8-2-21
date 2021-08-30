@@ -84,7 +84,7 @@ A much better way would be to provide access to state at a global level and have
 So the two main reasons we should make use of useContext are: 
 
 - Avoiding Prop Drilling
-- Managing App-level state
+- Provide access to App-level state to components dispersed through the app hierarchy
 
 ## Context Provider and Consumer Model
 
