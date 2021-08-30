@@ -67,7 +67,7 @@ But, there are times where pieces of state need to be used across the entire app
 
 ### Avoiding Prop Drilling
 
-So far, we have been passing props down from parent to child components. In most instances, this is the best way to handle sharing information between components as it keeps this information localized to the parts of your tree that need it. 
+So far, we have been passing props down from parent to child components. In most instances, this is the easiest way to handle sharing information between components as it keeps this information localized to the parts of your tree that need it. 
 
 But, as your tree grows, you'll find yourself passing props down through multiple levels. In the example below sending a single value of state all the way down to the the last child requires passing it down as props through every intermediary Component in the hierarchy. 
 
