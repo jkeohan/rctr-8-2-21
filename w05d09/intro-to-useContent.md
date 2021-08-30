@@ -64,7 +64,6 @@ But, there are times where pieces of state need to be used across the entire app
  - When many views & UI components need to know who the currently logged-in user is.
  - When all UI components need to know if the app is in "light" or "dark" mode.
 
-This is *one* of the times when Context can be useful: when you need to *manage app-level state*.
 
 ### Avoiding Prop Drilling
 
