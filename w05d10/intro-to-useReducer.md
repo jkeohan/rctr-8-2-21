@@ -298,6 +298,7 @@ The example he works through in his article is a bit advanced but the gist of it
 
 ### References
 
+- [Managing Complex State with useReducer Hook](https://medium.com/swlh/react-managing-complex-state-transitions-with-usereducer-e37536b12944)
 - [What is a Reducer in JavaScript/React/Redux - Robin Wieruch](https://www.robinwieruch.de/javascript-reducer)
 - [How to useReducer in React? - Robin Wieruch](https://www.robinwieruch.de/react-usereducer-hook)
 - [Getting to Know the useReducer React Hook - CSS Tricks](https://css-tricks.com/getting-to-know-the-usereducer-react-hook/)
