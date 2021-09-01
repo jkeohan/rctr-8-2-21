@@ -142,7 +142,7 @@ In this demo we will be using the following starter code: [React Context CodeSan
 Working with React Context involves setting up context in the parent Component and then consuming it in the child.  In order to work with context  we will need to do the following:
 
 In the App Component:
-- import `createContext` 
+- import `createContext` from react
 - create and export an instance of `createContext`
 - set up a `context.Provider `
 - provide the data via the `context.Provider`

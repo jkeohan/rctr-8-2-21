@@ -22,7 +22,7 @@ Array.reduce((acc, val, index) => {
 The parameters that `reduce()` takes in are:
 
 - a callback function that takes in an accumulator (acc), the current element in the loop (val), the index position of that element (index)
-- an optional starting value (init)
+- an optional starting value (init), which can be a number, array, object, ect.
 
 The `accumulator` will determine if it has been assigned a starting value otherwise it will use the element at the first position in the array.
 
@@ -56,9 +56,7 @@ OUTPUT: { banana: 2, cherry: 3, orange: 3, apple: 2, fig: 1 }
 
 In both cases we reduced the input of many things to a single thing, be it a number or agit pun object.
 
-<!-- [reduce-examples-solution repl](https://repl.it/@jkeohan/reducer-examples-solution)  -->
-
-[reduce-examples-solution repl]() - **provided after the codealong**
+[reduce-examples-solution repl](https://repl.it/@jkeohan/reducer-examples-solution) 
 
 <hr>
 
@@ -70,9 +68,8 @@ In both cases we reduced the input of many things to a single thing, be it a num
 
 So now that we have worked through a few examples of `[].reduce()` let's apply this knowledge and create a `reducer`.
 
-For this small demo we will be using the following starter code:
-
-[Starter CodeSandbox](https://codesandbox.io/s/counter-class-to-functional-usestate-starter-jdj6f?file=/src/components/Counter.js)
+Fork the 
+ [Starter CodeSandbox](https://codesandbox.io/s/counter-class-to-functional-usestate-starter-jdj6f?file=/src/components/Counter.js)
 
 <!-- BACKUP -->
 <!-- [CodeSandbox - Counter Reducer - Starter](https://codesandbox.io/s/counter-usereducer-starter-luru8?file=/src/components/Counter.js) -->
@@ -129,7 +126,7 @@ And of course the buttons that call the supporting functions.
 
 ### Our First Reducer
 
-Let's refactor this a bit to use a `reducer` function. The idea here is to aggregate state and all the logic update state into one single function.
+Let's refactor this a bit to use a `reducer` function. The idea here is to aggregate state and all the logic needed to update state into one single function.
 
 It will take in the following:
 
@@ -230,7 +227,7 @@ const [count, dispatch] = useReducer(counterReducer, 0);
 
 Now all that is left is to update are the buttons. Although `dispatch` is essentially the `counterReducer` function, which itself takes in two params: `state` and `action`, we only need to pass dispatch a single `action` value. 
 
-This is because `useReducer` will be executing the callback function and it takes on the responsibility of managing the current state and updating it based on the action. 
+This is because `useReducer` will be executing the callback function and it takes on the responsibility of managing and updating the current state based on the action provided. 
 
 ```sh
 <button onClick={() => dispatch('INCREMENT')}>+</button>
