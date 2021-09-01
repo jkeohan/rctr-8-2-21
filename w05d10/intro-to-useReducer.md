@@ -14,14 +14,14 @@ A `reducer` is a fancy word for a function that takes in several values and redu
 In fact you may have already worked with a `reducer` it you have ever used the `Array.reduce()` method.
 
 ```js
-Array.reduce((acc, val) => {
+Array.reduce((acc, val, index) => {
 	return acc;
 }, init);
 ```
 
 The parameters that `reduce()` takes in are:
 
-- a callback function that takes in an accumulator (acc) and the current element in the loop (val)
+- a callback function that takes in an accumulator (acc), the current element in the loop (val), the index position of that element (index)
 - an optional starting value (init)
 
 The `accumulator` will determine if it has been assigned a starting value otherwise it will use the element at the first position in the array.
