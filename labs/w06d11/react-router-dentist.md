@@ -1,7 +1,7 @@
 
 # Dentist Web Site
 
-Here is the working [Solution](https://j2rkf.csb.app/contactgp u)
+Here is the working [Solution](https://j2rkf.csb.app)
 
 Fork the [Starter CodeSandbox](https://codesandbox.io/s/dentist-assignment-starter-scmqv)
 
