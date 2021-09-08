@@ -50,13 +50,13 @@ The class schedule is as follows:
 | 11  | Mon 09/06 | LABOR DAY - NO CLASS |  |  |
 | 12  | Wed 09/08 | React Router  | <li>Do: [Final Project - Wireframes](https://github.com/jkeohan/rctr-final-project)</li> <li>Read: [React Router - Complete Guide](https://www.sitepoint.com/react-router-complete-guide/)</li> | []() |
 | 13  | Mon 09/13 | React Router Cont... | <li>Read: [React Router A to Z 2020](https://medium.com/@SakibAdnan/react-router-a-to-z-2020-11310fb2e74a)</li><li>[useHistory Hook For React Router](https://medium.com/javascript-in-plain-english/navigating-your-react-app-with-the-usehistory-hook-c7c465bfc6f6)</li>| []() |
-| 14  | Wed 09/15|  Final Project 1on1's | <li>Do: Final Project - Initial Build</li> <li>Read: [4 Ways to Style CSS in React](https://www.robinwieruch.de/react-css-styling)</li><li>Read: [7 Ways to Style React Components](https://www.sitepoint.com/react-components-styling-options/)</li>  |  |
+| 14  | Wed 09/15|  Final Project 1on1's | <li>Do: [Final Project - Initial Build](https://github.com/jkeohan/rctr-final-project)</li> <li>Read: [4 Ways to Style CSS in React](https://www.robinwieruch.de/react-css-styling)</li><li>Read: [7 Ways to Style React Components](https://www.sitepoint.com/react-components-styling-options/)</li>  |  |
 | 15  | Mon 09/20 | Styled Components | <li>Read:[React-Redux Tutorial - Robin Wieruch](https://www.robinwieruch.de/react-redux-tutorial#redux-store)</li><li>Read: [What Does Redux Do? - david ceddia](https://daveceddia.com/what-does-redux-do/)</li> | []() |
-| 16  | Wed 09/22 | Intro To Redux  | <li>Do: Final Project - MVP</li><li>Read: [useLocalStorage Hook](https://usehooks.com/useLocalStorage/)</li><li>Read: [Writing Your Own Custom Hooks](https://blog.bitsrc.io/writing-your-own-custom-hooks-4fbcf77e112e)</li><li>Read: [11 Custom Hooks](https://blog.bitsrc.io/11-useful-custom-react-hooks-for-your-next-app-c66307cf0f0c)</li>  | []() |
+| 16  | Wed 09/22 | Intro To Redux  | <li>Do: [Final Project - MVP](https://github.com/jkeohan/rctr-final-project)</li><li>Read: [useLocalStorage Hook](https://usehooks.com/useLocalStorage/)</li><li>Read: [Writing Your Own Custom Hooks](https://blog.bitsrc.io/writing-your-own-custom-hooks-4fbcf77e112e)</li><li>Read: [11 Custom Hooks](https://blog.bitsrc.io/11-useful-custom-react-hooks-for-your-next-app-c66307cf0f0c)</li>  | []() |
 | 17 | Mon 09/27 | Custom Hooks | <li>Read: [React/D3 Ecosystem](https://www.smashingmagazine.com/2018/02/react-d3-ecosystem/)</li> | []() |
-| 18  | Wed 09/29 | React & Mapbox | <li>Do: Final Project - MVP</li><li>Read: [React Testing - Jest/Enzyme](https://medium.com/javascript-in-plain-english/testing-in-react-part-1-types-tools-244107abf0c6)</li>  | []() |
+| 18  | Wed 09/29 | React & Mapbox | <li>Do: [Final Project - MVP](https://github.com/jkeohan/rctr-final-project)</li><li>Read: [React Testing - Jest/Enzyme](https://medium.com/javascript-in-plain-english/testing-in-react-part-1-types-tools-244107abf0c6)</li>  | []() |
 | 19  | Mon 10/04 | Testing In React | |  |
-| 20  | Wed 10/06 |  Final Project 1on1's  | <li>Do: Final Project - MVP</li> |  |
+| 20  | Wed 10/06 |  Final Project 1on1's  | <li>Do: [Final Project - MVP/PostMVP](https://github.com/jkeohan/rctr-final-project)</li> |  |
 | 21  | Mon 10/11 | Project Presentations |  |  |
 
 <!--  -->
