@@ -16,14 +16,19 @@ Here is our [Starter Code](https://codesandbox.io/s/rctr-router-p2-bitcoin-start
 
 
 
-
 ## Currencies Route
 
-If we look at this component we see a long list of links. Note that the links are using regular `<a>` tags.
+If we look at this component we see a long list of currencies. 
+
+<img src="https://i.imgur.com/D57VJ1G.png" />
+
+## Currencies Component
+
+This component renders the individual currencies.
 
 What happens if we click on a link? It works, but the whole page reloads which is a poor choice of UI. 
 
-Lets go ahead and replace the `a` tag with a `<Link>` component. Make the `to` prop value equal to the `href` value.
+Lets go ahead and replace the `a` tag with a `<Link>` component. 
 
 ```jsx
 // src/Components/Currencies/Currencies.js
@@ -33,7 +38,7 @@ import { Link } from 'react-router-dom'
       return (
         <div className="currency" key={item.currency}>
            <p>
-            <a href={"/currencies/" + item.currency}>{item.currency}</a>:{" "}
+            <Link to={"/currencies/" + item.currency}>{item.currency}</Link>:{" "}
             {item.country}
           </p>
         </div>
@@ -60,9 +65,12 @@ If we take a moment to examine the `Currency` Component we will see that there i
 const coindeskURL = "https://api.coindesk.com/v1/bpi/currentprice/";
 ```
 
-It make sense that we should retrieve the most current price for the currency, hence using the url to do just that. 
+If we try going to the above url we will see the following:
 
-If we copy/paste the url into the browser and append a bitcoin currency we should see that it returns the data. 
+<img src="https://i.imgur.com/v1C3VSS.png"/>
+
+
+If we append a bitcoin currency we should see that the url does return that currencies data. 
 
 ```js
 https://api.coindesk.com/v1/bpi/currentprice/AFN
@@ -78,7 +86,7 @@ In order to active this route we need  add another `<Route>` component in `App`.
 
 This time though we want to include a `parameter`.
 
-Look at the URL that we're on after clicking on a currency and we should see the following:
+Clicking on a currency will now update our URL to the following:
 
 ```js
 https://vthmi.csb.app/currencies/AFN
@@ -125,11 +133,13 @@ If we examine the `Currency` Component in React DevTools we should see the follo
 
 <img src="https://i.imgur.com/EVfxNzn.png" width=500/>
 
-So it looks like `props.match.params.currency` contains the value that we need to make the API call. 
+So it looks like `props.match.params.currency` contains the currency code that we need to make the API call. 
 
 ## Adding useState and useEffect to Currency Component
 
-Knowing that its best to make an API call and retrieve the most active price this will require that the component re-render. In order for this to happen we will need to make use of btoh `useState` and `useEffect`, so let's import them into the `Currency` Component
+Knowing that in order to view the most active price we will need to make an API call.  Once the data has been fetched we will need to update state in order to force the component to re-render. 
+
+In order to implement this logic we will need to make use of both `useState` and `useEffect`, so let's import them into the `Currency` Component
 
 ```js
 import React, {useState, useEffect} from "react";
@@ -149,7 +159,7 @@ We will make the call when the component first mounts, `componentDidMount`,  and
 ```js
   useEffect(() => {
     const makeApiCall = async () => {
-       const currency = props.match.params.currency;
+      const currency = props.match.params.currency;
       const url = `${coindeskURL}${currency}.json`
       const res  =  await fetch(url)
       const json = await res.json()
@@ -187,7 +197,7 @@ First take a look at `App` to at least add the `>` to the existing JSX.
 
 #### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 5min
 
-Based on your current knowledge of React, and limited knowledge of React Router,  think of 1 or possibly 2 different ways to implement this logic.  
+Based on your current knowledge of React and React Router, think of a way to implement this logic.  
 
 - Take 2 minutes to think how you would implement this request
 - The instructor will ask you to post your answers in a slack thread
@@ -196,11 +206,18 @@ Based on your current knowledge of React, and limited knowledge of React Router,
 <hr>
 
 ## Lifting State
-In order to show that value in `App` we need to pass, or better yet lift, the currency name from `Currency` to `App`.  In order to to this we need to pass down a function.  In order to keep our design simple we will pass `setCurrency` down from `App`. 
 
 **App.js**
+
+In order to show the currency value in `App` we need to pass, or better yet lift, the currency name from `Currency` to `App`.  
+
+In order to to this we need to pass down a function that will call `setCurrency`.  So let's create a new function to pass down.
+
+
 ```js
- const [currency, setCurrency] = useState('');
+  const handleClick = price => {
+    setCurrency(price);
+  };
 ```
 
 Here is the thing though.  The way our route is configured we can't pass down props. 
@@ -209,10 +226,10 @@ Here is the thing though.  The way our route is configured we can't pass down pr
  <Route path="/currencies/:currency" component={Currency}/>
 ```
 
-This requires that we use the `render` method in the route and pass down the routerProps.
+In order to do so we will need to replace `component` with the `render` method in the route and pass down the routerProps.
 
 ```html
-<Route path="/currencies/:currency" render={(routerProps) => <Currency setCurrency={setCurrency}/>} />
+<Route path="/currencies/:currency" render={ () => <Currency setCurrency={setCurrency}/>} />
 ```
 
 Let's see if that works.  
@@ -239,7 +256,7 @@ It seems as though we have lost all of the previous router props that we had acc
 
 <img src="https://i.imgur.com/FGMRfVo.png" width=500/>
 
-We need to get them back and can do so by manually passing them down using the spread operator.
+The render method requires that we pass the router props to the callback function.  We can then manually assign the props. 
 
 ```js
 <Route path="/currencies/:currency" render={(routerProps) => 
@@ -287,7 +304,7 @@ props.setCurrency(currency)
 
 ### Update Navigation
 
-Add the following in `App`
+Let's update App to include the currency name in the navigation by adding the following:
 
 ```js
 <Link to="/currencies">{
@@ -316,13 +333,13 @@ For that we need to add an `onClick` event to both of those `Link`'s
 
 Now uncomment out the code in `Currency` Component and we should be good to go.  
 
-We still have some weird issue where both the `currencies` and `currencies/:currency` routes display at the same time. 
+<!-- We still have some weird issue where both the `currencies` and `currencies/:currency` routes display at the same time. 
 
 <img src="https://i.imgur.com/3EQxfuL.png" width=300/>
 
 
 
- Let's make use of a new React Router Component called `Switch` that will help fix this.  
+ Let's make use of a new React Router Component called `Switch` that will help fix this.   -->
 
 ## Using Switch 
 
@@ -338,15 +355,28 @@ Currencies component. That's silly.
 There are two ways to handle this: using the Switch component, or specifying
 `exact` on routes.
 
-Let's look at our routes in `App.js` again:
+Let's update our routes in `App.js` once last time to replace `exact` with the `Switch` component. 
+
+Lets first import Switch
+
+```js
+import { Route, Link, Switch } from 'react-router-dom'
+```
+
+And then use the Switch component. 
 
 ```html
-<Route path="/" component={Home}/>
-<Route path="/currencies/:currency"
-  render={(routerProps) => <Currency setCurrency={setCurrency} {...routerProps}/> }
-/>
-<Route path="/currencies" component={Currencies}/>
+        <Switch>
+          <Route path="/"component={Home} />
+          <Route path="/currencies/:currency"
+            render={(routerProps) => <Currency setCurrency={setCurrency} {...routerProps} /> }
+          />
+          <Route path="/currencies" component={Currencies}
+          />
+        </Switch>
 ```
+
+Does this work as expected? 
 
 Try putting `exact` on the `/` path route component.
 
@@ -354,9 +384,7 @@ Try putting `exact` on the `/` path route component.
 <Route exact path="/" component={Home} />
 ```
 
-> Note: this is equivalent to putting `exact=true`
-
-Beautiful! this is a great solution, unless we have many different routes.
+<!-- Beautiful! this is a great solution, unless we have many different routes.
 
 If we had a list of routes like:
 
@@ -371,9 +399,9 @@ we would have to put `exact` on `/currencies` or else, any time we went to
 We can avoid all this by just using `<Switch />`.
 
 Back in `App.js`, let's import the `<Switch />` component and then wrap all of
-our routes in it.
+our routes in it. -->
 
-```html
+<!-- ```html
 import { Route, Link, Switch } from 'react-router-dom'
 
   return(
@@ -397,7 +425,7 @@ import { Route, Link, Switch } from 'react-router-dom'
       </main>
     </div>
   )
-```
+``` -->
 
 ## Redirects Revisited
 
