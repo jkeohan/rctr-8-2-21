@@ -17,7 +17,7 @@ Here is our [Starter Code](https://codesandbox.io/s/rctr-router-p2-bitcoin-start
 
 
 
-## Currencies component 
+## Currencies Route
 
 If we look at this component we see a long list of links. Note that the links are using regular `<a>` tags.
 
