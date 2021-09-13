@@ -1,10 +1,9 @@
 # React Router
 
-Spin a new react up using create-react-app
+Fork the [Starter CodeSandbox](https://codesandbox.io/s/istocks-starter-9wb38)
+
 
 Look over the working [Solution](https://vhixt.csb.app/) and examine the app in React Dev Tools to see if you can elicit the structure so that you have a starting point for you app. 
-
-Fork the [Starter CodeSandbox](https://codesandbox.io/s/istocks-starter-9wb38)
 
 This version of the application can uses both the the hard coded data in [`stock-data.json`](./stock-data.js) or pulling data from an API which you can do by signing up for an API key here [https://financialmodelingprep.com/](https://financialmodelingprep.com/)
 
