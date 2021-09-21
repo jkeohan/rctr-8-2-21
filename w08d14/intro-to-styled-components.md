@@ -595,6 +595,8 @@ animation: ${animate};
 
 Here is the [Solution Code](https://codesandbox.io/s/styles-4-ways-starter-8-2-21-flp8j?file=/src/StyledComponents/index.js)
 
+<!-- [6 Ways To Style](https://codesandbox.io/s/styles-6-ways-solution-wumw8?file=/src/InlineStylesWithHooks/index.js) -->
+
 <!-- Here is the [Solution Code](https://codesandbox.io/s/styles-4-ways-starter-10-22-20-gpf9t?file=/src/StyledComponents/index.js) -->
 
 ### Bonus - Sass/SCSS
