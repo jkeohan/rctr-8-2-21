@@ -609,6 +609,8 @@ Let's take a look at the [Sass](https://sass-lang.com/guide) documentation
 
 <hr>
 
+[Sass Solution](https://codesandbox.io/s/styles-4-ways-solution-wumw8?file=/src/Modules/styles.module.scss)
+
 ## Additional Resources
 
 - [CSS Modules](https://github.com/css-modules/css-modules#composition).
