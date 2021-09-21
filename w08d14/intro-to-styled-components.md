@@ -593,7 +593,7 @@ animation: ${animate};
 
 ### Solution Code
 
-Here is the [Solution Code](https://codesandbox.io/s/styles-4-ways-starter-forked-t5vvn?file=/src/StyledComponents/index.js)
+Here is the [Solution Code](https://codesandbox.io/s/styles-4-ways-starter-8-2-21-flp8j?file=/src/StyledComponents/index.js)
 
 <!-- Here is the [Solution Code](https://codesandbox.io/s/styles-4-ways-starter-10-22-20-gpf9t?file=/src/StyledComponents/index.js) -->
 
