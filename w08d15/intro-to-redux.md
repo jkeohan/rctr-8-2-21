@@ -27,11 +27,11 @@ Before we jump into Redux let's take a minute to answer a few questions regardin
 <br>
 
 **useState**
-- uses a standard `state` / `setState` approach to managing data
+- returns `state` / `setState` function when initiated
 - business logic is handled by separate `handler` functions and each is used to update state 
 
 **useReducer**
-- uses a `state` / `dispatch` approach to managing state
+- returns a single `dispatch` function when initiated
 - the `dispatch` function is passed an action and/or a payload of data
 - encapsulates all business logic needed to update state
 
@@ -462,6 +462,10 @@ And lastly update the buttons to reference these new props.
 Redux has a great [Redux DevTools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en) chrome extension. 
 
 First we must download and install it and then update `createstore` with the following in order to use it. 
+
+**App.js** 
+
+In App.js add the following to the store:
 
 ```js
 const store = createStore(
