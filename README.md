@@ -55,8 +55,8 @@ The class schedule is as follows:
 | 16  | Wed 09/22 | [Intro To Redux](https://github.com/jkeohan/rctr-8-2-21/blob/main/w08d15/intro-to-redux.md)  | <li>Do: [Final Project - MVP](https://github.com/jkeohan/rctr-final-project)</li><li>Read: [useLocalStorage Hook](https://usehooks.com/useLocalStorage/)</li><li>Read: [Writing Your Own Custom Hooks](https://blog.bitsrc.io/writing-your-own-custom-hooks-4fbcf77e112e)</li><li>Read: [11 Custom Hooks](https://blog.bitsrc.io/11-useful-custom-react-hooks-for-your-next-app-c66307cf0f0c)</li>  | [Recording](https://generalassembly.zoom.us/rec/share/PwX_1_MPHltrdEmSrCWmqfzEA9PS4ed0XNOJ6778aAi4pnXYV9IdMv8QO_V1Ztlb.wK2OUNQhCFnmgICT?startTime=1632354992000) |
 | 17 | Mon 09/27 | [Custom Hooks](https://github.com/jkeohan/rctr-8-2-21/blob/main/w09d16/intro-to-custom-hooks.md) |<li>Read: [React Testing - Jest/Enzyme](https://medium.com/javascript-in-plain-english/testing-in-react-part-1-types-tools-244107abf0c6)</li>  | [Recording](https://generalassembly.zoom.us/rec/share/9u1w0pNd1VVuTsfe_R61U83xLZWeHoVc_jffUBf6_kJX88HMAZ0V_aqoQFtl1jAD.K7rtFPVxoslV2bKh?startTime=1632786857000) |
 | 18  | Wed 09/29 | [Testing In React](https://github.com/jkeohan/rctr-8-2-21/blob/main/w09d17/intro-to-testing-in-react.md)| <li>Do: [Final Project - MVP](https://github.com/jkeohan/rctr-final-project)</li>  | []() |
-| 19  | Wed 10/06 |  Final Project 1on1's  | <li>Do: [Final Project - MVP/PostMVP](https://github.com/jkeohan/rctr-final-project)</li> |  |
-| 20  | Mon 10/04 | React & Mapbox  | <li>Do: [Final Project - MVP](https://github.com/jkeohan/rctr-final-project)</li> | []() |
+| 19  | Mon 10/04 |  Final Project 1on1's  | <li>Do: [Final Project - MVP/PostMVP](https://github.com/jkeohan/rctr-final-project)</li> |  |
+| 20  | Wed 10/06 | React & Mapbox  | <li>Do: [Final Project - MVP](https://github.com/jkeohan/rctr-final-project)</li> | []() |
 | 21  | Mon 10/11 | Project Presentations |  |  |
 
 <!--  -->
