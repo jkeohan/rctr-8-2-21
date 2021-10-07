@@ -156,5 +156,7 @@ Implementing one of these styles is done by adding a **mapStyle** prop and setti
 />
 ```
 
+[Solution](https://codesandbox.io/s/rctr-mapbox-starter-8-2-21-0kfn5?file=/src/Map/index.js)
+
 
 ## Additional Resources
