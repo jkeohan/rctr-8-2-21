@@ -56,8 +56,8 @@ The class schedule is as follows:
 | 17 | Mon 09/27 | [Custom Hooks](https://github.com/jkeohan/rctr-8-2-21/blob/main/w09d16/intro-to-custom-hooks.md) |<li>Read: [React Testing - Jest/Enzyme](https://medium.com/javascript-in-plain-english/testing-in-react-part-1-types-tools-244107abf0c6)</li>  | [Recording](https://generalassembly.zoom.us/rec/share/9u1w0pNd1VVuTsfe_R61U83xLZWeHoVc_jffUBf6_kJX88HMAZ0V_aqoQFtl1jAD.K7rtFPVxoslV2bKh?startTime=1632786857000) |
 | 18  | Wed 09/29 | [Testing In React](https://github.com/jkeohan/rctr-8-2-21/blob/main/w09d17/intro-to-testing-in-react.md)| <li>Do: [Final Project - MVP](https://github.com/jkeohan/rctr-final-project)</li>  | [Recording](https://generalassembly.zoom.us/rec/share/3C0A7Dg-5bGOREUrWyY_3-wxrZdzn3Uaiwq0UQs4qkU-3gM9Qt0l0UI4qfQe3NOU.19-suByreNrn9RSd?startTime=1633391721000) |
 | 19  | Mon 10/04 |  Final Project 1on1's  | <li>Do: [Final Project - MVP/PostMVP](https://github.com/jkeohan/rctr-final-project)</li> |  |
-| 20  | Wed 10/06 | [React & Mapbox](https://github.com/jkeohan/rctr-8-2-21/blob/main/w10d19/intro-to-mapbox.md)  | <li>Do: [Final Project - MVP](https://github.com/jkeohan/rctr-final-project)</li> | []() |
-| 21  | Mon 10/11 | Project Presentations |  |  |
+| 20  | Wed 10/06 | [React & Mapbox](https://github.com/jkeohan/rctr-8-2-21/blob/main/w10d19/intro-to-mapbox.md)  | <li>Do: [Final Project - MVP](https://github.com/jkeohan/rctr-final-project)</li> | [Recording](https://generalassembly.zoom.us/rec/share/gl8gGHpQjQ7aHOn2xL9Ee0uqhcYmGnLHHTfJIMw3IjiP3VuoYI_oNiRPM8A00oE.9C_8bxZEhBnPjVd4?startTime=1633564756000) |
+| 21  | Mon 10/11 | Project Presentations |  | [Recording](https://generalassembly.zoom.us/rec/share/3CuGPMnjs1yY-JqBljHmHSkfCrXpIE9I09gKHGWMqAI2WuhxBIDhYfBDj3bqMEOE.J3GLdiXxjIfJjl7T?startTime=1633996257000) |
 
 <!--  -->
 
