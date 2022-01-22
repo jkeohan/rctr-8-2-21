@@ -37,7 +37,10 @@ We will be using the following libraries to create and run our tests.
 [Jest](https://jestjs.io/en/) is an easy to configure testing framework built by Facebook for testing JavaScript code. 
 
 ### Running A Single Test
-Test are created using either `it()` or `test()`.  Both functions perform the same action and in the end it comes down to readability and more so about the actual test message. 
+Test are created using either `it()` or `test()` functions.  Both functions are the same and take in 2 params: 
+
+- the test message
+- callback function
 
 ```js
 test('does this thing', () => {});
@@ -48,7 +51,10 @@ it('should do this thing', () => {});
 ```
 
 ### Creating A Suite Of Tests
-Several tests can be combined into a `suite` of tests by wrapping them in `describe()`. 
+Several tests can be run against a common feature and should be combined into a `suite` of tests.  This can be done by wrapping them in `describe()` which also takes in 2 params:
+
+- the describe message
+- callback function
 
 Here is an example of several tests being run against an algo that flattens an array. 
 ```js
@@ -76,7 +82,7 @@ Let's take a look at the docs on running tests in [CodeSandbox](https://codesand
 
 ## Starter Code
 
-The starter code we will be using is a full `create-react-app` build and is slightly different then the React app we are able to spin up using the React CodeSandbox template.  
+<!-- The starter code we will be using is a full `create-react-app` build and is slightly different then the React app we are able to spin up using the **React CodeSandbox** template.   -->
 
 <!-- Here is the starter code: [CodeSandbox React Testing](https://codesandbox.io/s/rctr-react-testing-7w0uk) -->
 Here is the starter code: [CodeSandbox React Testing](https://codesandbox.io/s/rctr-react-testing-forked-ldlz8)
