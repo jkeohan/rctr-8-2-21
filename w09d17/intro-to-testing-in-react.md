@@ -488,7 +488,7 @@ The test passes without the need to import and run the component in App.
 
 ## Writing Tests for a Counter App 
 
-For this exercise, you will be using test driven development to write the React code to pass some pre-written tests. 
+For this exercise, you will be continue using **TDD** to write the tests first and then the React code to pass them.. 
 
 We want to build a counter app. When we press a button, we want a number stored in state to increase, and when we press a second button that number will decrease. Given these test requirements, write a React component that passes the following tests.
 
@@ -526,7 +526,7 @@ Copy the following code into `Counter.test.js` to get us started.
 
 ```js
 import React from 'react'
-import Adapter from '../../setupTests'
+import Adapter from '../../setUpTests'
 import { shallow } from 'enzyme'
 
 import Counter from './Counter'
@@ -541,7 +541,7 @@ describe('Counter component', () => {
 #### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 20min -->
 
 
-Here are the functions that are being used in case we want to review the [Jest](https://facebook.github.io/jest/docs/en/api.html) and [Enzyme](https://github.com/airbnb/enzyme/tree/master/docs/api) documentation and get a better idea of what they are doing. 
+Here are the functions that we will be using in case we want to review the [Jest](https://facebook.github.io/jest/docs/en/api.html) and [Enzyme](https://github.com/airbnb/enzyme/tree/master/docs/api) documentation and get a better idea of what they are doing. 
 
 #### Jest
 
@@ -580,9 +580,34 @@ describe('Counter component', () => {
   })
 })
 ```
+
+The will fails as expected. 
+
+<img src="https://i.imgur.com/6yGWDIk.png" alt="" width=400 />
+
+
+ So now let's write the code needed to make it pass.  In the **Counter.js** file add the following:
+
+```
+import React from 'react';
+
+export default function Counter(props) {
+
+  return (
+    <div>
+      <h1>Counter</h1>
+    </div>
+  );
+}
+```
+
+The test should now pass. 
+
+<img src="https://i.imgur.com/ioufcXn.png" alt="" width=400 />
+
 #### The Counter Test
 
-If we examine the Counter component we can see that it contains a span with a class name of 'counter` and that it should show the current value and that is what we will run our test against. 
+Let's now have our Counter component render a span with a class of **counter** that should show the starting value. 
 
 ```js
 describe('Counter component', () => {
@@ -594,6 +619,30 @@ describe('Counter component', () => {
   })
 })
 ```
+
+Test should once again fail as expected so let's add the code to make it pass. This
+
+```
+export default function Counter(props) {
+  return (
+    <div>
+      <h1>Counter</h1>
+
+      <div>
+        Current Count:
+        <span className="counter">0</span>
+      </div>
+    </div>
+  );
+}
+```
+
+Now it should passes. 
+
+
+<img src="https://i.imgur.com/UVyPqxX.png" alt="" width=400 />
+
+
 
 #### Adding beforeEach()
 
@@ -617,7 +666,7 @@ describe('Counter component', () => {
     expect(component.contains(<h1>Counter</h1>)).toBe(true)
   })
 
-  it('should display the current number in an element with the className number', () => {
+  it('should display the current number in an element with the className of "number"', () => {
     expect(component.find('.counter').text()).toEqual("0")
   })
 
