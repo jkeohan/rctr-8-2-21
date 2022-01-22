@@ -379,7 +379,7 @@ Now our test should pass.
 **Enzyme** requires that we first import the following packages:
 
 - enzyme 
-- enzyme-adapter-react-17
+- enzyme-adapter-react-17-updated
 - react-test-renderer
 - @testing-library/jest-dom (previously imported)
 
@@ -393,7 +393,7 @@ Then we need to create a **setUpTests.js** file. Create-react-app reads this fil
 ```js
 import '@testing-library/jest-dom';
 import { configure } from 'enzyme'
-import Adapter from 'enzyme-adapter-react-17'
+import Adapter from 'enzyme-adapter-react-17-updated'
 
 configure({ adapter: new Adapter() })
 
