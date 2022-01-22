@@ -191,6 +191,13 @@ Now it's your turn to create the following tests:
 - it should return an empty array when the input is an empty array
 - it should return a flattened array if the input contains 2 levels of nested arrays
 
+**Bonus**
+- is should confirm that the input type is an array
+
+Review the following:
+- [expect.any(constructor)](https://jestjs.io/docs/expect#expectanyconstructor)
+- [Test if object, array or string](https://github.com/facebook/jest/issues/3457) - 4th thread from bottom of page
+
 <hr>
 
 ADD SOLUTION CODE HERE
@@ -198,18 +205,31 @@ ADD SOLUTION CODE HERE
 <details><summary>Solution</summary>
 
 ```js
-it("returns empty array when the input is an empty array", () => {
-  const array = [];
-  const result = flatten(array);
-  const expectedResult = [];
-  expect(result).toEqual(expectedResult);
+it('should returns empty array when the input is an empty array', () => {
+  // input
+  const nestedArray = [];
+  // expected output
+  const flatArray = [];
+  // match our expectations
+  expect(flatten(nestedArray)).toEqual(flatArray);
 });
 
-it("goes 4 levels deep", () => {
-  const nestedArray = [[1, 2, [3, [[4], 5]]], [6]];
-  const flatArray = [1, 2, 3, 4, 5, 6];
-  const result = flatten(nestedArray);
-  expect(result).toEqual(flatArray);
+it('should flatten an array that is at least 4 levels deep', () => {
+  // input
+  const nestedArray = [1, [2, 3], [[4, [5]]]];
+  // expected output
+  const flatArray = [1, 2, 3, 4, 5];
+  // match our expectations
+  expect(flatten(nestedArray)).toEqual(flatArray);
+});
+
+it('should determine input in an array', () => {
+  // input
+  const nestedArray = [];
+  // expected output
+  const flatArray = [];
+  // match our expectations
+  expect(nestedArray).toEqual(expect.any(Array));
 });
 ```
 </details>
