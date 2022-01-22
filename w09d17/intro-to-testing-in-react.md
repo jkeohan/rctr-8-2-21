@@ -34,7 +34,7 @@ We will be using the following libraries to create and run our tests.
 
 
 ## Starting With Jest
-[Jest](https://jestjs.io/en/) is an easy to configure testing framework built by Facebook for testing JavaScript code.  It's one of the most popular ways to test React components nowadays. 
+[Jest](https://jestjs.io/en/) is an easy to configure testing framework built by Facebook for testing JavaScript code. 
 
 ### Running A Single Test
 Test are created using either `it()` or `test()`.  Both functions perform the same action and in the end it comes down to readability and more so about the actual test message. 
@@ -78,7 +78,8 @@ Let's take a look at the docs on running tests in [CodeSandbox](https://codesand
 
 The starter code we will be using is a full `create-react-app` build and is slightly different then the React app we are able to spin up using the React CodeSandbox template.  
 
-Here is the starter code: [CodeSandbox React Testing](https://codesandbox.io/s/rctr-react-testing-7w0uk)
+<!-- Here is the starter code: [CodeSandbox React Testing](https://codesandbox.io/s/rctr-react-testing-7w0uk) -->
+Here is the starter code: [CodeSandbox React Testing](https://codesandbox.io/s/rctr-react-testing-forked-ldlz8)
 
 ## Flatten An Array Test
 
