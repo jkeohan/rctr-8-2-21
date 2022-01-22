@@ -87,6 +87,8 @@ Let's take a look at the docs on running tests in [CodeSandbox](https://codesand
 <!-- Here is the starter code: [CodeSandbox React Testing](https://codesandbox.io/s/rctr-react-testing-7w0uk) -->
 Here is the starter code: [CodeSandbox React Testing](https://codesandbox.io/s/rctr-react-testing-forked-ldlz8)
 
+<!-- [Solution Code](https://codesandbox.io/s/rctr-react-testing-solution-up-to-counter-v1ccw?file=/src/App.js) -->
+
 ## Flatten An Array Test
 
 Let's write our first test. Inside the `src` folder there is a folder called `algos` which contains two files: `flatten.js` and `flatten.test.js`
@@ -410,9 +412,12 @@ We will start with `HelloWorld` and need 2 files, one for our Component and the 
 
 As before React will detect that there is a test but since there isn't anything in it nothing will happen. 
 
-<img src="https://i.imgur.com/vVcVKbE.png" width=400/>
+<img src="https://i.imgur.com/HW23nrb.png" width=400/>
 
 ### Testing Props
+
+Were going to take a [Test Driven Development](https://learntdd.in/react/) approach now where we will write our tests first and then the code that will cause it to pass, or fail. 
+
 Let's write a test that confirm the `HelloWorld` component renders out a name that's passed to it via props. 
 
 Enzyme tests begin with rendering a React component, and for this, you have three choices: 
@@ -425,15 +430,15 @@ Let's start with Shallow Rendering as it should be used for tests that are limit
 
 #### Initial Setup 
 
-Let's start by importing `React, shallow` and the `HelloWorld` component. 
+Let's start by importing **React**, the **Adapter**, [shallow](https://enzymejs.github.io/enzyme/docs/api/shallow.html) and the **HelloWorld** component. 
 ```js
 import React from 'react'
-import Adapter from '../../setupTests'
+import Adapter from '../../setUpTests'
 import { shallow } from 'enzyme'
 import HelloWorld from './HelloWorld'
 ```
 
-Now we write the tests we would like to perform and place them in a test suite.  
+Although we are creating a test to confirm a prop value we will also include additional tests so let's include a **describe** to group them into a test suite. 
 
 ```js
 //...previous imports
@@ -446,6 +451,7 @@ describe('Hello world component', () => {
 ```
 
 Here we will be testing to confirm that the HelloWorld component was passed a prop value of `Your name`. 
+
 ```js
 //...previous imports
 
