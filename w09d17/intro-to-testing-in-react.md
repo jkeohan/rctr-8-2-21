@@ -123,18 +123,18 @@ flatten([1,[2,3],[[4],5]]) => [1,2,3,4,5]
 
 ### Our First Test
 
-If we take a look at `flatten.test.js` we see that contains no code and since there are no tests torun our testing results should be empty. 
+If we take a look at `flatten.test.js` we see that contains no code and since there are no tests to run our testing results should be empty. 
 
 <img src="https://i.imgur.com/lKclmfd.png" />
 
-Of course the idea here is that the user would need to figure the code to the algo themselves and then run the tests to validate they got it right. 
+Of course the idea here is that the user would need to work out the logic to solve the algo themselves and then run the tests to validate they got it right. 
 
 Our goal however is to create a series of tests that would validate the results of running that code.  
 
 Let's start by creating a single test that includes the **input** and **output** we expect.
 
 ```js
-it("should flatten an array of arrays.", () => {
+it("should flatten an array of arrays", () => {
   // input
   const nestedArray = [1,[2,3],[[4],5]];
   // output
@@ -145,7 +145,7 @@ it("should flatten an array of arrays.", () => {
 Now we use the `expect()` function that then runs the algo passing in the array to be flattened and then compares the results. 
 
 ```js
-it("should flatten an array of arrays.", () => {
+it("should flatten an array of arrays", () => {
    // input
   const nestedArray = [1,[2,3],[[4],5]];
   // output
@@ -170,7 +170,7 @@ So let's remedy that by importing the **flatten** function.
 ```js
 import flatten from './flatten'
 
-it("should flatten an array of arrays.", () => {
+it("should flatten an array of arrays", () => {
   const nestedArray = [1,[2,3],[4,5]];
   const flatArray = [1, 2, 3, 4, 5];
   expect(flatten(nestedArray)).toEqual(flatArray);
@@ -197,14 +197,14 @@ ADD SOLUTION CODE HERE
 <details><summary>Solution</summary>
 
 ```js
-it("Returns empty array when the input is an empty array.", () => {
+it("returns empty array when the input is an empty array", () => {
   const array = [];
   const result = flatten(array);
   const expectedResult = [];
   expect(result).toEqual(expectedResult);
 });
 
-it("Goes 4 levels deep.", () => {
+it("goes 4 levels deep", () => {
   const nestedArray = [[1, 2, [3, [[4], 5]]], [6]];
   const flatArray = [1, 2, 3, 4, 5, 6];
   const result = flatten(nestedArray);
@@ -219,16 +219,16 @@ Being that these tests are meant to test the validity of the same code we could 
 
 
 ```js
-describe("Flatten tests:", () => {
-  it("should flatten an array of arrays.", () => {
+describe("flatten tests", () => {
+  it("should flatten an array of arrays", () => {
     // ...code
   });
 
-  it("should returns empty array when the input is an empty array.", () => {
+  it("should returns empty array when the input is an empty array", () => {
     // ...code
   });
 
-  it("should flatten an array that is at least 4 levels deep.", () => {
+  it("should flatten an array that is at least 4 levels deep", () => {
     // ...code
   });
 });
