@@ -374,27 +374,24 @@ Now our test should pass.
 
 
 ### Setting Up Our Environment For Enzyme 
-Now the `React Testing Library`  comes completely configured within `create-react-app`, so we don't have to do anything else to get it working, however `Enzyme` requires a bit of setup.  
-
-First we need to import the following packages:
+**Enzyme** requires that we first import the following packages:
 
 - enzyme 
-- enzyme-adapter-react-16
+- enzyme-adapter-react-17
 - react-test-renderer
-- @testing-library/jest-dom
+- @testing-library/jest-dom (previously imported)
 
+At the moment, Enzyme has adapters that provide compatibility for different versions of React.  Since we are using the latest (v17) let's import that version. 
 
 **Create setupTest.js file**
 
 
-Then we need to create a file `setupTests.js`. Create-react-app reads this file to see if there is any additional setup for the tests. In that file let's import the `jest-dom` library and then configure Enzyme to use an `Adapter`
-
-At the moment, Enzyme has adapters that provide compatibility with React 16.x, React 15.x, React 0.14.x and React 0.13.x.   Since we are using the most current version of React lets configure the adapter to use v16. 
+Then we need to create a **setUpTests.js** file. Create-react-app reads this file to see if there is any additional setup for the tests. In that file let's import the `jest-dom` library and then configure Enzyme to use an `Adapter`
 
 ```js
 import '@testing-library/jest-dom';
 import { configure } from 'enzyme'
-import Adapter from 'enzyme-adapter-react-16'
+import Adapter from 'enzyme-adapter-react-17'
 
 configure({ adapter: new Adapter() })
 
