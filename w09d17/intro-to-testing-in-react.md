@@ -648,7 +648,7 @@ Now it should passes.
 
 Since we will need to recreate the Counter component for each test we can create a shallow version of it prior to running each subsequent test. 
 
-To do this we must use the `beforeEach()` function and then we update each test and remove the local shallow copy. 
+To do this we must use the **beforeEach()** function and then we update each test and remove the local shallow copy. 
 
 ```js
 import React from 'react'
@@ -677,7 +677,7 @@ Now let's continue with our tests.
 
 #### The Increment Using Button Test
 
-Testing buttons requires that we fire a `click`  event and cause it's functionality to execute.  We can do this using `.simulate()` and confirm that the value has increased by 1. 
+Testing buttons requires that we fire a **click**  event and cause it's functionality to execute.  We can do this using **.simulate()** and confirm that the value has increased by 1. 
 
 
 ```js
@@ -694,6 +694,33 @@ describe('Counter component', () => {
     expect(component.find('.counter').text()).toEqual("1")
   })
 })
+```
+
+This also requires that we update our Component to include a button but also **state**. 
+
+```
+import React, { useState } from 'react';
+
+export default function Counter(props) {
+  const [count, setCount] = useState(0);
+  return (
+    <div>
+      <h1>Counter</h1>
+
+      <div>
+        Current Count:
+        <span className="counter">{count}</span>
+      </div>
+
+      <section>
+        <button className="plus" onClick={() => setCount(count + 1)}>
+          +
+        </button>
+      </section>
+    </div>
+  );
+}
+
 ```
 
 <hr>
