@@ -1024,11 +1024,11 @@ describe('ToDos Component', () => {
 
 </details> -->
 
-
+<!-- 
 ## Review
 
 * What is Jest? How about Enzyme?
-* What is the difference between `shallow` and `mount`?
+* What is the difference between `shallow` and `mount`? -->
 
 ## Resources
 - [React Testing Libraries](https://medium.com/javascript-in-plain-english/testing-in-react-part-2-react-testing-library-f32432b93c6c)
