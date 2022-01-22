@@ -142,7 +142,9 @@ it("should flatten an array of arrays", () => {
 });
 ```
 
-Now we use the `expect()` function that then runs the algo passing in the array to be flattened and then compares the results. 
+We now need to validate that if **flatten()** received **nestedArray** as input that its output would be **flatArray**.  
+
+In order to do that we will use the [expect()](https://jestjs.io/docs/expect) function which gives us access to a number of custom **matchers**, one of which is **.toEqual**. 
 
 ```js
 it("should flatten an array of arrays", () => {
