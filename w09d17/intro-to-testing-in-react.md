@@ -165,7 +165,6 @@ If we take a look at the **Test Summary** we can see as to why the test has fail
 
 <img src="https://i.imgur.com/olGAYMm.png" width=300 />
 
-Let's force our test to fail so we can see the results of a failed test. 
 
 So let's remedy that by importing the **flatten** function. 
 
