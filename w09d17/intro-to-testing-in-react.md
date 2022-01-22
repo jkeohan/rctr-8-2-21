@@ -300,15 +300,20 @@ test('renders learn react link', () => {
 });
 ```
 
-Our test should fail. Why? 
+Our test appears to be failing. Why? 
 
-<img src="https://i.imgur.com/buPaqk0.png" width=500// >
+<img src="https://i.imgur.com/buPaqk0.png" width=500  />
 
 **Import The Library** 
 
-Let's resolve that error by importing the library. 
+So it looks like it's missing the **@testing-library/react** package so let's resolve that error by importing the library. 
 
 <img src="https://i.imgur.com/fDmp7eg.png" width=300/>
+
+And so our test now passes.
+
+<img src="https://i.imgur.com/Q2cOm6H.png" width=500  />
+
 
 Let's add a console log to see what **linkElement** returns.
 
