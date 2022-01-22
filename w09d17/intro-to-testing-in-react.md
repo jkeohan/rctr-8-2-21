@@ -24,7 +24,7 @@ This is where formal testing comes in. It ensures that your app is continuing to
 We will be using the following libraries to create and run our tests.
 
 - [Jest](https://jestjs.io/en/)
-- [React Testing Library](https://github.com/testing-library/jest-dom)
+- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
 - [Enzyme](https://github.com/airbnb/enzyme)
 
 
@@ -260,7 +260,7 @@ describe("flatten tests", () => {
 
 Testing in React uses the same approach for creating individual tests and organizing them into a suite of tests.  
 
-We do however need to leverage the `React Testing Library`.  For even more advanced testing where we can't to manipulate the DOM, we would need the assist of `Enzyme`. 
+We do however need to leverage the [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/).  For even more advanced testing where we can't to manipulate the DOM, we would need the assist of `Enzyme`. 
 
 ### Setup
 Let's first create a filed called `App.test.js` and import both `React` and the `App` component. 
