@@ -263,14 +263,7 @@ Testing in React uses the same approach for creating individual tests and organi
 We do however need to leverage the [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/).  For even more advanced testing where we can't manipulate the DOM, we would need the assist of `Enzyme`. 
 
 ### Setup
-Let's first create a filed called `App.test.js` and import both `React` and the `App` component. 
-
-```js
-import React from 'react'
-import App from './App';
-```
-
-We will need to import both `render` and `screen` from the testing library.  
+Let's first create a filed called `App.test.js` and import **react**, the component we want to run test against, and both **render** and **screen** from the **React Testing** library.
 
 ```js
 import React from 'react'
@@ -282,22 +275,22 @@ import { render, screen } from '@testing-library/react';
 
 #### <g-emoji class="g-emoji" alias="alarm_clock" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/23f0.png">⏰</g-emoji> Activity - 3min
 
-Let's take a minute to look at the documentation for [render](https://github.com/testing-library/react-testing-library) as it will hold the DOM elements and run the query. 
+Let's take a minute to look at the documentation for [render](https://github.com/testing-library/react-testing-library) as it will hold the DOM elements and run the query as well as [screen](https://testing-library.com/docs/queries/about/#screen) which contains the DOM elements rendered by that component. 
 
 
 <hr>
 
-### Writing Our Test
+### Writing A Basic Test
 
-Our basic test will confirm that the text **"learn react"** is being rendered via the `App` component. 
+Our basic test will confirm that the text **"learn react"** is being rendered via the **App** component. 
 
- For that we will need to `render` the component and then query the page for the text using `screen.getByText()`
+ For that we will need to **render** the component and then query the page for the text using **screen.getByText()**.
 
 
 ```js
 import React from 'react'
-import { render, screen } from '@testing-library/react';
 import App from './App';
+import { render, screen } from '@testing-library/react';
 
 test('renders learn react link', () => {
   // RENDERS THE APP COMPONENT
