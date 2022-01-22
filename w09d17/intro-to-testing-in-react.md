@@ -284,7 +284,7 @@ Let's take a minute to look at the documentation for [render](https://github.com
 
 Our basic test will confirm that the text **"learn react"** is being rendered via the **App** component. 
 
- For that we will need to **render** the component and then query the page for the text using **screen.getByText()**.
+ For that we will need to **render** the component and then query the page for the element that contains our text using **screen.getByText()**.
 
 
 ```js
@@ -334,7 +334,7 @@ test('renders learn react link', () => {
 
 <img src="https://i.imgur.com/y5JzQbb.png" width=500/>
 
-In order to confirm that the test meets our expectations we still need to use the `expect()` function as before.
+In order to confirm that the test meets our expectations we still need to use the **expect()** function as before.  This time we will use an extended method called **[expect().toBeInTheDocument](https://github.com/testing-library/jest-dom#tobeinthedocument)**.
 
 ```js
 import React from 'react'
@@ -351,8 +351,22 @@ test('renders learn react link', () => {
 });
 ```
 
-[expect().toBeInTheDocument](https://github.com/testing-library/jest-dom#tobeinthedocument)
+It seems our test is failing. Why? 
 
+<img src="https://i.imgur.com/IuoSsX0.png" width=500/>
+
+Let's install the **testing-library/jest-dom** library and then import **import '@testing-library/jest-dom/extend-expect** into the test file.
+
+```
+import React from 'react';
+import App from './App';
+import { render, screen } from '@testing-library/react';
+import '@testing-library/jest-dom/extend-expect';
+```
+
+Now our test should pass.
+
+<img src="https://i.imgur.com/3vVg5CJ.png" width=500/>
 
 
 ## What is Enzyme?
