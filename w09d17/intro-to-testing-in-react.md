@@ -89,7 +89,7 @@ Here is the starter code: [CodeSandbox React Testing](https://codesandbox.io/s/r
 
 ## Flatten An Array Test
 
-Let's write our first test. Inside the `src` folder there is a folder called `Algos` which contains two files: `flatten.js` and `flatten.test.js`
+Let's write our first test. Inside the `src` folder there is a folder called `algos` which contains two files: `flatten.js` and `flatten.test.js`
 
 <img src="https://i.imgur.com/YyYVKdg.png" />
 
@@ -123,9 +123,7 @@ flatten([1,[2,3],[[4],5]]) => [1,2,3,4,5]
 
 ### Our First Test
 
-If we take a look at `flatten.test.js` we see that contains no code.  
-
-Since there are no tests written our testing results should be empty. 
+If we take a look at `flatten.test.js` we see that contains no code and since there are no tests torun our testing results should be empty. 
 
 <img src="https://i.imgur.com/lKclmfd.png" />
 
