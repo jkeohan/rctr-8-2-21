@@ -1031,6 +1031,7 @@ describe('ToDos Component', () => {
 * What is the difference between `shallow` and `mount`? -->
 
 ## Resources
+- [Top Testing Libraries for React in 2021](https://blog.logrocket.com/top-testing-libraries-for-react-in-2021/)
 - [React Testing Libraries](https://medium.com/javascript-in-plain-english/testing-in-react-part-2-react-testing-library-f32432b93c6c)
 - [Beginner Guide To Testing React Apps](https://thomlom.dev/beginner-guide-testing-react-apps/)
 - [Testing Functional Components Using Hooks](https://medium.com/@acesmndr/testing-react-functional-components-with-hooks-using-enzyme-f732124d320a)
