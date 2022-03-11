@@ -26,6 +26,3 @@ Here is a [working version of the Giphy App](https://pl515.csb.app/)
 
 - Add a Form that allows the user to type in a search query for specific Giphy's
 
-#### Bonus - Favorite A Giphy
-
-- Allow the user to favorite a Giphy and toggle between the Random Giphy and their Favorite List
