@@ -17,12 +17,17 @@ Here is a [working version of the Giphy App](https://pl515.csb.app/)
 
 #### 🚀 Completion looks like:
 
-* Minimum of 3 components.
+* Minimum of the following 3 components: **App (already present), Giph and Form.**
 * A single gif should rendered when the page initially loads (think ComponentDidMount)
-* On Button click make another API call update state with the new Gif
-* Render only a single gif at a time
+* On submission of the form make another API call update state with the new Gif
+* If the form is submitted with text then search for that type of Giph
+* If the form is submitted with no text than search for a random Giph
 
-#### Bonus - Add A Form
+#### Bonus - Add Context 
 
-- Add a Form that allows the user to type in a search query for specific Giphy's
+- Create a new context in App and have the Giph Component consume it.
 
+#### Bonus - Add History
+
+- Create a side list of all the previous Giphs that have been retrieved
+- Allow the user to click on any of them and display it in the main section 
